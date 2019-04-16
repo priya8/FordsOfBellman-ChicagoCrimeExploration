@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 1700px; height: 1000px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([41.8369, -87.6847], 11);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+var circle_455 = L.circle([41.885842801, -87.625489563], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_455.bindPopup("THEFT");
+map.addLayer(circle_455)
+
+var circle_456 = L.circle([41.771882384, -87.607142291], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_456.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_456)
+
+var circle_457 = L.circle([42.002683389, -87.669154932], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_457.bindPopup("BATTERY");
+map.addLayer(circle_457)
+
+var circle_458 = L.circle([41.88217044, -87.627626926], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_458.bindPopup("THEFT");
+map.addLayer(circle_458)
+
+var circle_459 = L.circle([41.851692444, -87.61385646], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_459.bindPopup("THEFT");
+map.addLayer(circle_459)
+
+var circle_460 = L.circle([41.750245094, -87.549729936], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_460.bindPopup("THEFT");
+map.addLayer(circle_460)
+
+var circle_461 = L.circle([41.899494585, -87.643851736], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_461.bindPopup("NARCOTICS");
+map.addLayer(circle_461)
+
+var circle_462 = L.circle([41.891739335, -87.658629842], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_462.bindPopup("THEFT");
+map.addLayer(circle_462)
+
+var circle_463 = L.circle([41.744113518, -87.602922515], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_463.bindPopup("OTHER OFFENSE");
+map.addLayer(circle_463)
+
+var circle_464 = L.circle([41.749348744, -87.721131714], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_464.bindPopup("BATTERY");
+map.addLayer(circle_464)
+
+var circle_465 = L.circle([41.77927992, -87.664363567], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_465.bindPopup("THEFT");
+map.addLayer(circle_465)
+
+var circle_466 = L.circle([41.808824873, -87.664830221], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_466.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_466)
+
+var circle_467 = L.circle([41.774589441, -87.604728816], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_467.bindPopup("ASSAULT");
+map.addLayer(circle_467)
+
+var circle_468 = L.circle([41.925246215, -87.66800379], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_468.bindPopup("THEFT");
+map.addLayer(circle_468)
+
+var circle_469 = L.circle([41.770723336, -87.684482659], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_469.bindPopup("OTHER OFFENSE");
+map.addLayer(circle_469)
+
+var circle_470 = L.circle([41.902485277, -87.731095268], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_470.bindPopup("ROBBERY");
+map.addLayer(circle_470)
+
+var circle_471 = L.circle([41.751004246, -87.627922069], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_471.bindPopup("THEFT");
+map.addLayer(circle_471)
+
+var circle_472 = L.circle([41.90997017, -87.728221804], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_472.bindPopup("THEFT");
+map.addLayer(circle_472)
+
+var circle_473 = L.circle([41.74968177, -87.570002233], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_473.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_473)
+
+var circle_474 = L.circle([41.872941463, -87.700607641], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_474.bindPopup("NARCOTICS");
+map.addLayer(circle_474)
+
+var circle_475 = L.circle([41.886705387, -87.726829181], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_475.bindPopup("THEFT");
+map.addLayer(circle_475)
+
+var circle_476 = L.circle([41.79804318, -87.662107384], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_476.bindPopup("OTHER OFFENSE");
+map.addLayer(circle_476)
+
+var circle_477 = L.circle([41.888074303, -87.634973145], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_477.bindPopup("THEFT");
+map.addLayer(circle_477)
+
+var circle_478 = L.circle([41.894954365, -87.765981894], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_478.bindPopup("PUBLIC PEACE VIOLATION");
+map.addLayer(circle_478)
+
+var circle_479 = L.circle([41.860692062, -87.709307501], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_479.bindPopup("NARCOTICS");
+map.addLayer(circle_479)
+
+var circle_480 = L.circle([41.867055964, -87.718460699], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_480.bindPopup("NARCOTICS");
+map.addLayer(circle_480)
+
+var circle_481 = L.circle([41.938220202, -87.657548358], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_481.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_481)
+
+var circle_482 = L.circle([41.751156791, -87.606170245], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_482.bindPopup("BATTERY");
+map.addLayer(circle_482)
+
+var circle_483 = L.circle([41.792809691, -87.658337201], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_483.bindPopup("BATTERY");
+map.addLayer(circle_483)
+
+var circle_484 = L.circle([41.930583834, -87.757923066], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_484.bindPopup("BURGLARY");
+map.addLayer(circle_484)
+
+var circle_485 = L.circle([41.785419976, -87.667856424], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_485.bindPopup("WEAPONS VIOLATION");
+map.addLayer(circle_485)
+
+var circle_486 = L.circle([41.871160929, -87.697217973], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_486.bindPopup("NARCOTICS");
+map.addLayer(circle_486)
+
+var circle_487 = L.circle([41.848206667, -87.691558318], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_487.bindPopup("BATTERY");
+map.addLayer(circle_487)
+
+var circle_488 = L.circle([41.746500835, -87.636465596], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_488.bindPopup("BATTERY");
+map.addLayer(circle_488)
+
+var circle_489 = L.circle([41.83061124, -87.648455176], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_489.bindPopup("BURGLARY");
+map.addLayer(circle_489)
+
+var circle_490 = L.circle([41.772522278, -87.730068957], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_490.bindPopup("THEFT");
+map.addLayer(circle_490)
+
+var circle_491 = L.circle([41.680000985, -87.637011474], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_491.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_491)
+
+var circle_492 = L.circle([41.962564393, -87.730537189], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_492.bindPopup("THEFT");
+map.addLayer(circle_492)
+
+var circle_493 = L.circle([41.899831126, -87.755572878], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_493.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_493)
+
+var circle_494 = L.circle([41.921135131, -87.710019677], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_494.bindPopup("THEFT");
+map.addLayer(circle_494)
+
+var circle_495 = L.circle([41.659136966, -87.639936994], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_495.bindPopup("THEFT");
+map.addLayer(circle_495)
+
+var circle_496 = L.circle([41.90039476, -87.7471193], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_496.bindPopup("BURGLARY");
+map.addLayer(circle_496)
+
+var circle_497 = L.circle([41.794530226, -87.672951282], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_497.bindPopup("NARCOTICS");
+map.addLayer(circle_497)
+
+var circle_498 = L.circle([41.765638265, -87.61311058], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_498.bindPopup("BATTERY");
+map.addLayer(circle_498)
+
+var circle_499 = L.circle([41.720684695, -87.598517579], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_499.bindPopup("OFFENSE INVOLVING CHILDREN");
+map.addLayer(circle_499)
+
+var circle_500 = L.circle([41.909192436, -87.790591302], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_500.bindPopup("ROBBERY");
+map.addLayer(circle_500)
+
+var circle_501 = L.circle([41.882269711, -87.626366265], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_501.bindPopup("THEFT");
+map.addLayer(circle_501)
+
+var circle_502 = L.circle([41.745525249, -87.663460858], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_502.bindPopup("ROBBERY");
+map.addLayer(circle_502)
+
+var circle_503 = L.circle([41.881002664, -87.712925283], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_503.bindPopup("NARCOTICS");
+map.addLayer(circle_503)
+
+var circle_504 = L.circle([41.786519537, -87.66817506], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_504.bindPopup("BATTERY");
+map.addLayer(circle_504)
+
+var circle_505 = L.circle([41.892880991, -87.668045961], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_505.bindPopup("THEFT");
+map.addLayer(circle_505)
+
+var circle_506 = L.circle([41.767742337, -87.582969909], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_506.bindPopup("THEFT");
+map.addLayer(circle_506)
+
+var circle_507 = L.circle([41.93534563, -87.761331339], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_507.bindPopup("PROSTITUTION");
+map.addLayer(circle_507)
+
+var circle_508 = L.circle([41.881221522, -87.764744692], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_508.bindPopup("BATTERY");
+map.addLayer(circle_508)
+
+var circle_509 = L.circle([41.968295824, -87.712796037], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_509.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_509)
+
+var circle_510 = L.circle([41.845457397, -87.627105668], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_510.bindPopup("ROBBERY");
+map.addLayer(circle_510)
+
+var circle_511 = L.circle([41.873991732, -87.62436828], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_511.bindPopup("THEFT");
+map.addLayer(circle_511)
+
+var circle_512 = L.circle([41.683496189, -87.53631419], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_512.bindPopup("BURGLARY");
+map.addLayer(circle_512)
+
+var circle_513 = L.circle([41.713316225, -87.632795323], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_513.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_513)
+
+var circle_514 = L.circle([41.70017293, -87.621069996], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_514.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_514)
+
+var circle_515 = L.circle([41.931809559, -87.716512492], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_515.bindPopup("ASSAULT");
+map.addLayer(circle_515)
+
+var circle_516 = L.circle([41.927809344, -87.645193244], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_516.bindPopup("CRIMINAL TRESPASS");
+map.addLayer(circle_516)
+
+var circle_517 = L.circle([41.910351, -87.69466514], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_517.bindPopup("ROBBERY");
+map.addLayer(circle_517)
+
+var circle_518 = L.circle([41.88981603, -87.718323277], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_518.bindPopup("NARCOTICS");
+map.addLayer(circle_518)
+
+var circle_519 = L.circle([41.68795639, -87.622153], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_519.bindPopup("CRIMINAL TRESPASS");
+map.addLayer(circle_519)
+
+var circle_520 = L.circle([41.837431095, -87.700172244], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_520.bindPopup("NARCOTICS");
+map.addLayer(circle_520)
+
+var circle_521 = L.circle([41.89683207, -87.624372827], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_521.bindPopup("BURGLARY");
+map.addLayer(circle_521)
+
+var circle_522 = L.circle([41.817163738, -87.619954905], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_522.bindPopup("BURGLARY");
+map.addLayer(circle_522)
+
+var circle_523 = L.circle([41.897578702, -87.704496733], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_523.bindPopup("BATTERY");
+map.addLayer(circle_523)
+
+var circle_524 = L.circle([41.954275056, -87.678113371], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_524.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_524)
+
+var circle_525 = L.circle([42.004013908, -87.699663815], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_525.bindPopup("BURGLARY");
+map.addLayer(circle_525)
+
+var circle_526 = L.circle([41.950057885, -87.643560757], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_526.bindPopup("THEFT");
+map.addLayer(circle_526)
+
+var circle_527 = L.circle([41.750830947, -87.6251791], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_527.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_527)
+
+var circle_528 = L.circle([41.887076264, -87.75510389], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_528.bindPopup("THEFT");
+map.addLayer(circle_528)
+
+var circle_529 = L.circle([41.782884707, -87.69255478], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_529.bindPopup("OTHER OFFENSE");
+map.addLayer(circle_529)
+
+var circle_530 = L.circle([41.893153004, -87.718831174], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_530.bindPopup("OTHER NARCOTIC VIOLATION");
+map.addLayer(circle_530)
+
+var circle_531 = L.circle([41.935629815, -87.783553233], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_531.bindPopup("PUBLIC PEACE VIOLATION");
+map.addLayer(circle_531)
+
+var circle_532 = L.circle([41.782204029, -87.613742855], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_532.bindPopup("THEFT");
+map.addLayer(circle_532)
+
+var circle_533 = L.circle([41.782226647, -87.653502099], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_533.bindPopup("BATTERY");
+map.addLayer(circle_533)
+
+var circle_534 = L.circle([41.972236616, -87.703744525], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_534.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_534)
+
+var circle_535 = L.circle([41.812869644, -87.616539734], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_535.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_535)
+
+var circle_536 = L.circle([41.902615292, -87.686870179], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_536.bindPopup("ARSON");
+map.addLayer(circle_536)
+
+var circle_537 = L.circle([41.745173095, -87.613401642], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_537.bindPopup("BATTERY");
+map.addLayer(circle_537)
+
+var circle_538 = L.circle([41.782182076, -87.586651393], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_538.bindPopup("THEFT");
+map.addLayer(circle_538)
+
+var circle_539 = L.circle([41.929627356, -87.656033118], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_539.bindPopup("OTHER OFFENSE");
+map.addLayer(circle_539)
+
+var circle_540 = L.circle([41.877178845, -87.706158189], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_540.bindPopup("BATTERY");
+map.addLayer(circle_540)
+
+var circle_541 = L.circle([41.860287786, -87.722416761], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_541.bindPopup("NARCOTICS");
+map.addLayer(circle_541)
+
+var circle_542 = L.circle([42.009095081, -87.674136513], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_542.bindPopup("ROBBERY");
+map.addLayer(circle_542)
+
+var circle_543 = L.circle([41.878215347, -87.74919109], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_543.bindPopup("ASSAULT");
+map.addLayer(circle_543)
+
+var circle_544 = L.circle([41.814633354, -87.6046273], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_544.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_544)
+
+var circle_545 = L.circle([41.809711398, -87.744586861], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_545.bindPopup("THEFT");
+map.addLayer(circle_545)
+
+var circle_546 = L.circle([41.777194873, -87.651861453], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_546.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_546)
+
+var circle_547 = L.circle([41.73528467, -87.545936573], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_547.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_547)
+
+var circle_548 = L.circle([41.943960107, -87.78445575], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_548.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_548)
+
+var circle_549 = L.circle([41.925239665, -87.668294158], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_549.bindPopup("THEFT");
+map.addLayer(circle_549)
+
+var circle_550 = L.circle([41.778741217, -87.724932841], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_550.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_550)
+
+var circle_551 = L.circle([41.746099315, -87.616256886], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_551.bindPopup("BURGLARY");
+map.addLayer(circle_551)
+
+var circle_552 = L.circle([41.96115503, -87.71987688], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_552.bindPopup("THEFT");
+map.addLayer(circle_552)
+
+var circle_553 = L.circle([41.812122612, -87.603804737], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_553.bindPopup("BURGLARY");
+map.addLayer(circle_553)
+
+var circle_554 = L.circle([41.940670273, -87.67207037], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_554.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_554)
+
+var circle_555 = L.circle([41.790861029, -87.624137294], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_555.bindPopup("ASSAULT");
+map.addLayer(circle_555)
+
+var circle_556 = L.circle([41.976200159, -87.905308733], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_556.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_556)
+
+var circle_557 = L.circle([41.877767018, -87.747913657], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_557.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_557)
+
+var circle_558 = L.circle([41.899033264, -87.667519286], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_558.bindPopup("BATTERY");
+map.addLayer(circle_558)
+
+var circle_559 = L.circle([41.715527019, -87.593214139], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_559.bindPopup("BURGLARY");
+map.addLayer(circle_559)
+
+var circle_560 = L.circle([41.794409732, -87.645404558], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_560.bindPopup("THEFT");
+map.addLayer(circle_560)
+
+var circle_561 = L.circle([41.804579093, -87.624484847], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_561.bindPopup("THEFT");
+map.addLayer(circle_561)
+
+var circle_562 = L.circle([41.871947188, -87.687634578], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_562.bindPopup("THEFT");
+map.addLayer(circle_562)
+
+var circle_563 = L.circle([41.774874543, -87.793008325], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_563.bindPopup("BURGLARY");
+map.addLayer(circle_563)
+
+var circle_564 = L.circle([41.968706514, -87.690677502], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_564.bindPopup("SEX OFFENSE");
+map.addLayer(circle_564)
+
+var circle_565 = L.circle([41.891056026, -87.669460532], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_565.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_565)
+
+var circle_566 = L.circle([41.867431713, -87.69974046], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_566.bindPopup("BATTERY");
+map.addLayer(circle_566)
+
+var circle_567 = L.circle([41.919894526, -87.661798258], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_567.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_567)
+
+var circle_568 = L.circle([41.983277512, -87.689571029], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_568.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_568)
+
+var circle_569 = L.circle([42.002482357, -87.673314428], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_569.bindPopup("ASSAULT");
+map.addLayer(circle_569)
+
+var circle_570 = L.circle([41.882363114, -87.764187409], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_570.bindPopup("BATTERY");
+map.addLayer(circle_570)
+
+var circle_571 = L.circle([41.960724412, -87.713277621], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_571.bindPopup("THEFT");
+map.addLayer(circle_571)
+
+var circle_572 = L.circle([41.74735811, -87.555386395], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_572.bindPopup("BATTERY");
+map.addLayer(circle_572)
+
+var circle_573 = L.circle([41.795078821, -87.587282837], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_573.bindPopup("BURGLARY");
+map.addLayer(circle_573)
+
+var circle_574 = L.circle([41.79508066, -87.587143461], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_574.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_574)
+
+var circle_575 = L.circle([41.905742719, -87.683289969], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_575.bindPopup("BURGLARY");
+map.addLayer(circle_575)
+
+var circle_576 = L.circle([41.966159694, -87.688684409], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_576.bindPopup("THEFT");
+map.addLayer(circle_576)
+
+var circle_577 = L.circle([41.972377411, -87.656157742], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_577.bindPopup("BATTERY");
+map.addLayer(circle_577)
+
+var circle_578 = L.circle([41.793193444, -87.661068849], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_578.bindPopup("BATTERY");
+map.addLayer(circle_578)
+
+var circle_579 = L.circle([41.711897393, -87.659407793], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_579.bindPopup("THEFT");
+map.addLayer(circle_579)
+
+var circle_580 = L.circle([41.81047035, -87.683773579], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_580.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_580)
+
+var circle_581 = L.circle([41.943504893, -87.665406394], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_581.bindPopup("BURGLARY");
+map.addLayer(circle_581)
+
+var circle_582 = L.circle([41.802669992, -87.727255561], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_582.bindPopup("CRIMINAL TRESPASS");
+map.addLayer(circle_582)
+
+var circle_583 = L.circle([41.772290984, -87.62690071], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_583.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_583)
+
+var circle_584 = L.circle([41.934101369, -87.656191595], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_584.bindPopup("BATTERY");
+map.addLayer(circle_584)
+
+var circle_585 = L.circle([41.88586237, -87.626884865], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_585.bindPopup("THEFT");
+map.addLayer(circle_585)
+
+var circle_586 = L.circle([41.80769214, -87.615372359], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_586.bindPopup("BATTERY");
+map.addLayer(circle_586)
+
+var circle_587 = L.circle([41.778473235, -87.692305395], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_587.bindPopup("CRIMINAL TRESPASS");
+map.addLayer(circle_587)
+
+var circle_588 = L.circle([41.790195963, -87.629337027], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_588.bindPopup("BURGLARY");
+map.addLayer(circle_588)
+
+var circle_589 = L.circle([41.736384843, -87.644122576], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_589.bindPopup("ASSAULT");
+map.addLayer(circle_589)
+
+var circle_590 = L.circle([41.766056247, -87.611496718], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_590.bindPopup("ASSAULT");
+map.addLayer(circle_590)
+
+var circle_591 = L.circle([41.721059904, -87.550205501], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_591.bindPopup("BURGLARY");
+map.addLayer(circle_591)
+
+var circle_592 = L.circle([41.879842118, -87.680306423], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_592.bindPopup("THEFT");
+map.addLayer(circle_592)
+
+var circle_593 = L.circle([41.791961609, -87.615760619], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_593.bindPopup("ASSAULT");
+map.addLayer(circle_593)
+
+var circle_594 = L.circle([41.812122612, -87.603804737], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_594.bindPopup("THEFT");
+map.addLayer(circle_594)
+
+var circle_595 = L.circle([41.809244193, -87.705086291], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_595.bindPopup("BURGLARY");
+map.addLayer(circle_595)
+
+var circle_596 = L.circle([41.771158392, -87.685713673], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_596.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_596)
+
+var circle_597 = L.circle([41.871900468, -87.7644271], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_597.bindPopup("THEFT");
+map.addLayer(circle_597)
+
+var circle_598 = L.circle([41.771949455, -87.669014802], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_598.bindPopup("CRIMINAL DAMAGE");
+map.addLayer(circle_598)
+
+var circle_599 = L.circle([41.74714039, -87.64651407], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_599.bindPopup("ROBBERY");
+map.addLayer(circle_599)
+
+var circle_600 = L.circle([41.892141811, -87.624314513], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_600.bindPopup("THEFT");
+map.addLayer(circle_600)
+
+var circle_601 = L.circle([41.863241282, -87.71791721], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_601.bindPopup("BURGLARY");
+map.addLayer(circle_601)
+
+var circle_602 = L.circle([41.85598885, -87.685596368], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_602.bindPopup("DECEPTIVE PRACTICE");
+map.addLayer(circle_602)
+
+var circle_603 = L.circle([41.881767946, -87.739857071], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_603.bindPopup("PROSTITUTION");
+map.addLayer(circle_603)
+
+var circle_604 = L.circle([41.968844586, -87.649962336], 200, {
+                            color: '#000000',
+                            fillColor: '#000000',
+                            fillOpacity: 0.2
+                            });
+circle_604.bindPopup("HOMICIDE");
+map.addLayer(circle_604)
+
+var circle_605 = L.circle([41.905821463, -87.726251539], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_605.bindPopup("BATTERY");
+map.addLayer(circle_605)
+
+var circle_606 = L.circle([41.686603121, -87.714587837], 200, {
+                            color: '#FFFB00',
+                            fillColor: '#FFFB00',
+                            fillOpacity: 0.2
+                            });
+circle_606.bindPopup("NARCOTICS");
+map.addLayer(circle_606)
+
+var circle_607 = L.circle([41.894660041, -87.635804943], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_607.bindPopup("THEFT");
+map.addLayer(circle_607)
+
+var circle_608 = L.circle([41.924970838, -87.754438473], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_608.bindPopup("MOTOR VEHICLE THEFT");
+map.addLayer(circle_608)
+
+var circle_609 = L.circle([41.809405012, -87.732584121], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_609.bindPopup("OFFENSE INVOLVING CHILDREN");
+map.addLayer(circle_609)
+
+var circle_610 = L.circle([41.765251387, -87.672478187], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_610.bindPopup("BATTERY");
+map.addLayer(circle_610)
+
+var circle_611 = L.circle([41.722796201, -87.619153485], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_611.bindPopup("THEFT");
+map.addLayer(circle_611)
+
+var circle_612 = L.circle([41.736554961, -87.60496835], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_612.bindPopup("ROBBERY");
+map.addLayer(circle_612)
+
+var circle_613 = L.circle([41.902805806, -87.630099679], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_613.bindPopup("BATTERY");
+map.addLayer(circle_613)
+
+var circle_614 = L.circle([41.866710091, -87.625961322], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_614.bindPopup("THEFT");
+map.addLayer(circle_614)
+
+var circle_615 = L.circle([41.763783406, -87.68796512], 200, {
+                            color: '#FF00FF',
+                            fillColor: '#FF00FF',
+                            fillOpacity: 0.2
+                            });
+circle_615.bindPopup("SEX OFFENSE");
+map.addLayer(circle_615)
+
+var circle_616 = L.circle([41.754386847, -87.718991171], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_616.bindPopup("BURGLARY");
+map.addLayer(circle_616)
+
+var circle_617 = L.circle([41.712515564, -87.568347162], 200, {
+                            color: '#07FA18',
+                            fillColor: '#07FA18',
+                            fillOpacity: 0.2
+                            });
+circle_617.bindPopup("MOTOR VEHICLE THEFT");
+map.addLayer(circle_617)
+
+var circle_618 = L.circle([41.896949548, -87.716506463], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_618.bindPopup("BATTERY");
+map.addLayer(circle_618)
+
+var circle_619 = L.circle([41.867662303, -87.632669442], 200, {
+                            color: '#0033FF',
+                            fillColor: '#0033FF',
+                            fillOpacity: 0.2
+                            });
+circle_619.bindPopup("CRIMINAL TRESPASS");
+map.addLayer(circle_619)
+
+var circle_620 = L.circle([41.970215029, -87.773301564], 200, {
+                            color: '#FA0707',
+                            fillColor: '#FA0707',
+                            fillOpacity: 0.2
+                            });
+circle_620.bindPopup("BATTERY");
+map.addLayer(circle_620)
+
+</script>
+
+</body>
