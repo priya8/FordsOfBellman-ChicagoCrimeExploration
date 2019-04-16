@@ -42,9 +42,9 @@ function clearOverlays() {
 // Add info windows to each marker for crime info
 function addCrimeInfo(number, marker, date, address, description, crimeType){
     //adding info
-    if(date.split(" ")[2]>='2012' && date.split(" ")[2]<='2017'){
+    
     var crimeInfo = "<p> #" + number + "</p><p> Description: " + crimeType 
-    + " " + description + "</p> <p> Block: " + address + "</p><p> Date: " + date + "</p>";}
+    + " " + description + "</p> <p> Block: " + address + "</p><p> Date: " + date + "</p>";
     	var infowindow = new google.maps.InfoWindow({
         content: crimeInfo
     });
@@ -56,7 +56,7 @@ function addCrimeInfo(number, marker, date, address, description, crimeType){
     marker.addListener("mouseover", function(){
         
         	infowindow.open(map, marker);
-        	marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
+       // 	marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png');
         
         
     });
