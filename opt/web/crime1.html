@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f93ee96705334a65b39d579f5fded83f {
+        position: relative;
+        width: 1700.0px;
+        height: 1000.0px;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f93ee96705334a65b39d579f5fded83f" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f93ee96705334a65b39d579f5fded83f = L.map(
+        'map_f93ee96705334a65b39d579f5fded83f', {
+        center: [41.8369, -87.6847],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_a9483ac9f60344068533731bb97f92ac = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f93ee96705334a65b39d579f5fded83f);
+    
+        var marker_b9b13a014c48434ea73d46618598b19b = L.marker(
+            [41.746777568, -87.65892587],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_9e3f7df2509f40bdbab42857ed3988e5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b9b13a014c48434ea73d46618598b19b.setIcon(icon_9e3f7df2509f40bdbab42857ed3988e5);
+            
+    
+            var popup_e7f93c62849f4f4cb1811b131a65f258 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d5fb81db03a141119147c37c2f5f3102 = $(`<div id="html_d5fb81db03a141119147c37c2f5f3102" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_e7f93c62849f4f4cb1811b131a65f258.setContent(html_d5fb81db03a141119147c37c2f5f3102);
+            
+
+            marker_b9b13a014c48434ea73d46618598b19b.bindPopup(popup_e7f93c62849f4f4cb1811b131a65f258)
+            ;
+
+            
+        
+    
+        var marker_8265c9630ab049eeac1f02bdbbed768c = L.marker(
+            [41.746777568, -87.65892587],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_dcb2a123d7db407f9a481cf9ddca93d5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8265c9630ab049eeac1f02bdbbed768c.setIcon(icon_dcb2a123d7db407f9a481cf9ddca93d5);
+            
+    
+            var popup_3b67c74881054d1c9aebb5ed56b55d3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f6fadf7f27da4a1892124fb951eaa007 = $(`<div id="html_f6fadf7f27da4a1892124fb951eaa007" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_3b67c74881054d1c9aebb5ed56b55d3f.setContent(html_f6fadf7f27da4a1892124fb951eaa007);
+            
+
+            marker_8265c9630ab049eeac1f02bdbbed768c.bindPopup(popup_3b67c74881054d1c9aebb5ed56b55d3f)
+            ;
+
+            
+        
+    
+        var marker_ed87aaabef994e3fba3bd5bfd6670a33 = L.marker(
+            [41.894947998, -87.754805169],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_0f765cb402fe4463aeea073f6f4fddf5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ed87aaabef994e3fba3bd5bfd6670a33.setIcon(icon_0f765cb402fe4463aeea073f6f4fddf5);
+            
+    
+            var popup_c92cfa260b134f15b30f8997d8eabaaa = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_299ea70ff38e4e13857d9a87f833a8e4 = $(`<div id="html_299ea70ff38e4e13857d9a87f833a8e4" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_c92cfa260b134f15b30f8997d8eabaaa.setContent(html_299ea70ff38e4e13857d9a87f833a8e4);
+            
+
+            marker_ed87aaabef994e3fba3bd5bfd6670a33.bindPopup(popup_c92cfa260b134f15b30f8997d8eabaaa)
+            ;
+
+            
+        
+    
+        var marker_3ce3b7cbfd7247d59c0d499e98d2a9df = L.marker(
+            [41.867716553, -87.697156665],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_d2ec2bb26d8e42dfb776f4ebc74d892e = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3ce3b7cbfd7247d59c0d499e98d2a9df.setIcon(icon_d2ec2bb26d8e42dfb776f4ebc74d892e);
+            
+    
+            var popup_0116f288ec0046dd8537ecb4d9633ed1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_92e9de7196624cc4907e0ed336048e1a = $(`<div id="html_92e9de7196624cc4907e0ed336048e1a" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_0116f288ec0046dd8537ecb4d9633ed1.setContent(html_92e9de7196624cc4907e0ed336048e1a);
+            
+
+            marker_3ce3b7cbfd7247d59c0d499e98d2a9df.bindPopup(popup_0116f288ec0046dd8537ecb4d9633ed1)
+            ;
+
+            
+        
+    
+        var marker_d46bf8834502412b8e38b83c03d3187e = L.marker(
+            [41.88728285, -87.756894211],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ffa7611ccfbe42729b36ee9168514cd4 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d46bf8834502412b8e38b83c03d3187e.setIcon(icon_ffa7611ccfbe42729b36ee9168514cd4);
+            
+    
+            var popup_36a78a6fe2ff4de7b018af6cc0d9791e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c17c539f73084b7e822045c7d8dc09c2 = $(`<div id="html_c17c539f73084b7e822045c7d8dc09c2" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_36a78a6fe2ff4de7b018af6cc0d9791e.setContent(html_c17c539f73084b7e822045c7d8dc09c2);
+            
+
+            marker_d46bf8834502412b8e38b83c03d3187e.bindPopup(popup_36a78a6fe2ff4de7b018af6cc0d9791e)
+            ;
+
+            
+        
+    
+        var marker_bc01e0eed57d4255923db24cc4fae828 = L.marker(
+            [41.869148051, -87.704448689],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_8789fb4c866642fcb5784d884adc070a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bc01e0eed57d4255923db24cc4fae828.setIcon(icon_8789fb4c866642fcb5784d884adc070a);
+            
+    
+            var popup_23f1fa1ba2a74e978c04cde6fbd9f69f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4afd60871c0b4bc6897c03467e561d24 = $(`<div id="html_4afd60871c0b4bc6897c03467e561d24" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_23f1fa1ba2a74e978c04cde6fbd9f69f.setContent(html_4afd60871c0b4bc6897c03467e561d24);
+            
+
+            marker_bc01e0eed57d4255923db24cc4fae828.bindPopup(popup_23f1fa1ba2a74e978c04cde6fbd9f69f)
+            ;
+
+            
+        
+    
+        var marker_f3edeb12903b4b85b87ed5f42d57f0f1 = L.marker(
+            [41.868180939, -87.709271389],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_33575c64eeb9469b83fda0fc05c2f4a0 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f3edeb12903b4b85b87ed5f42d57f0f1.setIcon(icon_33575c64eeb9469b83fda0fc05c2f4a0);
+            
+    
+            var popup_92c4fd7df1394523b751ab6ed6454adc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_394f1595326a4b54909acb131e5b78c1 = $(`<div id="html_394f1595326a4b54909acb131e5b78c1" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_92c4fd7df1394523b751ab6ed6454adc.setContent(html_394f1595326a4b54909acb131e5b78c1);
+            
+
+            marker_f3edeb12903b4b85b87ed5f42d57f0f1.bindPopup(popup_92c4fd7df1394523b751ab6ed6454adc)
+            ;
+
+            
+        
+    
+        var marker_a585f550aea94ca8aed6ab830c3f12bd = L.marker(
+            [41.87154041, -87.705838807],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_b4da8161cb334522a1156c6444cc75ee = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a585f550aea94ca8aed6ab830c3f12bd.setIcon(icon_b4da8161cb334522a1156c6444cc75ee);
+            
+    
+            var popup_099610b9b7404bea8b39b94281ad0311 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b09423a6fa1f4bcc98959a73092075b1 = $(`<div id="html_b09423a6fa1f4bcc98959a73092075b1" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_099610b9b7404bea8b39b94281ad0311.setContent(html_b09423a6fa1f4bcc98959a73092075b1);
+            
+
+            marker_a585f550aea94ca8aed6ab830c3f12bd.bindPopup(popup_099610b9b7404bea8b39b94281ad0311)
+            ;
+
+            
+        
+    
+        var marker_d5bb3e088d2e4a3795d13218ab0d112a = L.marker(
+            [41.880364404, -87.755762959],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ff83e84c9f0d4dcb9c0306c541b5c314 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5bb3e088d2e4a3795d13218ab0d112a.setIcon(icon_ff83e84c9f0d4dcb9c0306c541b5c314);
+            
+    
+            var popup_ead082754156479d82ad8cb8aa6e9cb8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_62cfb9460a774694868fcd311ba4de06 = $(`<div id="html_62cfb9460a774694868fcd311ba4de06" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ead082754156479d82ad8cb8aa6e9cb8.setContent(html_62cfb9460a774694868fcd311ba4de06);
+            
+
+            marker_d5bb3e088d2e4a3795d13218ab0d112a.bindPopup(popup_ead082754156479d82ad8cb8aa6e9cb8)
+            ;
+
+            
+        
+    
+        var marker_b0e6da9d510749b7b01c9eca983fa852 = L.marker(
+            [41.868180939, -87.709271389],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_a7c1571fbc9041d587ec815031a0ce45 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b0e6da9d510749b7b01c9eca983fa852.setIcon(icon_a7c1571fbc9041d587ec815031a0ce45);
+            
+    
+            var popup_34a57df462614d21b2b1b5fcdbd55a6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42b2d857a3f94f939dce021816d0809d = $(`<div id="html_42b2d857a3f94f939dce021816d0809d" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_34a57df462614d21b2b1b5fcdbd55a6f.setContent(html_42b2d857a3f94f939dce021816d0809d);
+            
+
+            marker_b0e6da9d510749b7b01c9eca983fa852.bindPopup(popup_34a57df462614d21b2b1b5fcdbd55a6f)
+            ;
+
+            
+        
+    
+        var marker_5c06867312014ee5b773b4ffbe43837d = L.marker(
+            [41.789846764, -87.654763689],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_c057c214a16d41e2a9518f8c7a4569f7 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5c06867312014ee5b773b4ffbe43837d.setIcon(icon_c057c214a16d41e2a9518f8c7a4569f7);
+            
+    
+            var popup_445cb11176674647a2f23be5707f06c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c8b8cb8f563240ceb824cc0a3a2811de = $(`<div id="html_c8b8cb8f563240ceb824cc0a3a2811de" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_445cb11176674647a2f23be5707f06c7.setContent(html_c8b8cb8f563240ceb824cc0a3a2811de);
+            
+
+            marker_5c06867312014ee5b773b4ffbe43837d.bindPopup(popup_445cb11176674647a2f23be5707f06c7)
+            ;
+
+            
+        
+    
+        var marker_47c09ec7fede481fb489814062cb68be = L.marker(
+            [41.730359865, -87.66105762],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_551d0b9ffe6a404283e8d9f0760f993f = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47c09ec7fede481fb489814062cb68be.setIcon(icon_551d0b9ffe6a404283e8d9f0760f993f);
+            
+    
+            var popup_ed4287d8d3fd49d7b8d2b9ab773291a6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b117ed0cb99c48819628ebde7848d0de = $(`<div id="html_b117ed0cb99c48819628ebde7848d0de" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ed4287d8d3fd49d7b8d2b9ab773291a6.setContent(html_b117ed0cb99c48819628ebde7848d0de);
+            
+
+            marker_47c09ec7fede481fb489814062cb68be.bindPopup(popup_ed4287d8d3fd49d7b8d2b9ab773291a6)
+            ;
+
+            
+        
+    
+        var marker_6566693d984449949f4b34cb9f10451f = L.marker(
+            [41.875250865, -87.726823664],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_c4956293a8044cf08bebc5f1c747214b = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6566693d984449949f4b34cb9f10451f.setIcon(icon_c4956293a8044cf08bebc5f1c747214b);
+            
+    
+            var popup_185e3f17295441f8b5b1845f220cfb46 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_03d26850e1e747978feb6d6e317dd86a = $(`<div id="html_03d26850e1e747978feb6d6e317dd86a" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_185e3f17295441f8b5b1845f220cfb46.setContent(html_03d26850e1e747978feb6d6e317dd86a);
+            
+
+            marker_6566693d984449949f4b34cb9f10451f.bindPopup(popup_185e3f17295441f8b5b1845f220cfb46)
+            ;
+
+            
+        
+    
+        var marker_4e841d1863304457b77b44dd9b88572b = L.marker(
+            [41.735329284, -87.652113682],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_c037e862b46a4d4f853a0d0444eb7b11 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4e841d1863304457b77b44dd9b88572b.setIcon(icon_c037e862b46a4d4f853a0d0444eb7b11);
+            
+    
+            var popup_f8f612e9bdad46c198fe48b43017f91d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f5ee48f5aa434dc98e4365f46eeadee0 = $(`<div id="html_f5ee48f5aa434dc98e4365f46eeadee0" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_f8f612e9bdad46c198fe48b43017f91d.setContent(html_f5ee48f5aa434dc98e4365f46eeadee0);
+            
+
+            marker_4e841d1863304457b77b44dd9b88572b.bindPopup(popup_f8f612e9bdad46c198fe48b43017f91d)
+            ;
+
+            
+        
+    
+        var marker_4cd2ebf5610040909d47829043684241 = L.marker(
+            [41.88090842, -87.711736421],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_86597dd8b42048c7a7556c039d2741eb = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4cd2ebf5610040909d47829043684241.setIcon(icon_86597dd8b42048c7a7556c039d2741eb);
+            
+    
+            var popup_33fdc041f50443f49eb167d0bae48bc8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4a8f65d21bcd4eeda2bbf999519ee643 = $(`<div id="html_4a8f65d21bcd4eeda2bbf999519ee643" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_33fdc041f50443f49eb167d0bae48bc8.setContent(html_4a8f65d21bcd4eeda2bbf999519ee643);
+            
+
+            marker_4cd2ebf5610040909d47829043684241.bindPopup(popup_33fdc041f50443f49eb167d0bae48bc8)
+            ;
+
+            
+        
+    
+        var marker_98dbc606534b4d8ca9a36a522c5158a0 = L.marker(
+            [41.735199195, -87.653316791],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ce524f6a0d3e416fa71330320733147a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_98dbc606534b4d8ca9a36a522c5158a0.setIcon(icon_ce524f6a0d3e416fa71330320733147a);
+            
+    
+            var popup_c56e162fa55646eca946a59b53c96887 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8f673896d68d4c2b9182d7cf5a0b712b = $(`<div id="html_8f673896d68d4c2b9182d7cf5a0b712b" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_c56e162fa55646eca946a59b53c96887.setContent(html_8f673896d68d4c2b9182d7cf5a0b712b);
+            
+
+            marker_98dbc606534b4d8ca9a36a522c5158a0.bindPopup(popup_c56e162fa55646eca946a59b53c96887)
+            ;
+
+            
+        
+    
+        var marker_b5c709e274574752b734cc5816fe6779 = L.marker(
+            [41.753459119, -87.55423526],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ad233dcbca5640c5b0898cdfb1f2be41 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b5c709e274574752b734cc5816fe6779.setIcon(icon_ad233dcbca5640c5b0898cdfb1f2be41);
+            
+    
+            var popup_3b0442f3c8bf484ba4ef371ba5341f75 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_912c35e4bf9d4a098f2cda8c9765947c = $(`<div id="html_912c35e4bf9d4a098f2cda8c9765947c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_3b0442f3c8bf484ba4ef371ba5341f75.setContent(html_912c35e4bf9d4a098f2cda8c9765947c);
+            
+
+            marker_b5c709e274574752b734cc5816fe6779.bindPopup(popup_3b0442f3c8bf484ba4ef371ba5341f75)
+            ;
+
+            
+        
+    
+        var marker_a4cf0349905f45ecbc71f3d88586a088 = L.marker(
+            [41.752712739, -87.559932071],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_fa3926d6d6b84a149c30c2a266458aaf = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4cf0349905f45ecbc71f3d88586a088.setIcon(icon_fa3926d6d6b84a149c30c2a266458aaf);
+            
+    
+            var popup_19eace12f5ae4328a022b7b49cd33468 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64cc617d8f144adfb840f6dadb1c2c45 = $(`<div id="html_64cc617d8f144adfb840f6dadb1c2c45" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_19eace12f5ae4328a022b7b49cd33468.setContent(html_64cc617d8f144adfb840f6dadb1c2c45);
+            
+
+            marker_a4cf0349905f45ecbc71f3d88586a088.bindPopup(popup_19eace12f5ae4328a022b7b49cd33468)
+            ;
+
+            
+        
+    
+        var marker_dd5f6c34ad6144b4bbd3576a8f51d6ef = L.marker(
+            [41.867658906, -87.697153565],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_2c45a57107cd4b6cba5c2a8dd3f524cf = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd5f6c34ad6144b4bbd3576a8f51d6ef.setIcon(icon_2c45a57107cd4b6cba5c2a8dd3f524cf);
+            
+    
+            var popup_490dfd10535c41ceada5cd83c9412f22 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b18dc0dfa1f942399bca1a4e1b88c0a5 = $(`<div id="html_b18dc0dfa1f942399bca1a4e1b88c0a5" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_490dfd10535c41ceada5cd83c9412f22.setContent(html_b18dc0dfa1f942399bca1a4e1b88c0a5);
+            
+
+            marker_dd5f6c34ad6144b4bbd3576a8f51d6ef.bindPopup(popup_490dfd10535c41ceada5cd83c9412f22)
+            ;
+
+            
+        
+    
+        var marker_385014c0d7af4eeeab6ecbc265a9012c = L.marker(
+            [41.866388583, -87.707188831],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_c7b07f59fc2e4926a5c77870dfde9f47 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_385014c0d7af4eeeab6ecbc265a9012c.setIcon(icon_c7b07f59fc2e4926a5c77870dfde9f47);
+            
+    
+            var popup_abb001359508402b8704a6ae503f59fe = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_994ad9cde9e341a69825cd85c479c08f = $(`<div id="html_994ad9cde9e341a69825cd85c479c08f" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_abb001359508402b8704a6ae503f59fe.setContent(html_994ad9cde9e341a69825cd85c479c08f);
+            
+
+            marker_385014c0d7af4eeeab6ecbc265a9012c.bindPopup(popup_abb001359508402b8704a6ae503f59fe)
+            ;
+
+            
+        
+    
+        var marker_a621d5ea7ca24dacb7b3c1609d8d2af9 = L.marker(
+            [41.880445077, -87.725661897],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_63032f85ff9f4d81b921a790826df2ae = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a621d5ea7ca24dacb7b3c1609d8d2af9.setIcon(icon_63032f85ff9f4d81b921a790826df2ae);
+            
+    
+            var popup_427c36ea43c64f309511afa5eb9cb0c7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9e0c629ef27e4672a0f87f21322573b8 = $(`<div id="html_9e0c629ef27e4672a0f87f21322573b8" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_427c36ea43c64f309511afa5eb9cb0c7.setContent(html_9e0c629ef27e4672a0f87f21322573b8);
+            
+
+            marker_a621d5ea7ca24dacb7b3c1609d8d2af9.bindPopup(popup_427c36ea43c64f309511afa5eb9cb0c7)
+            ;
+
+            
+        
+    
+        var marker_6d77d24995c049078d02da26cdcf237e = L.marker(
+            [41.895003278, -87.62152816],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_362ec92ecfb94f38a45846f05430781a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6d77d24995c049078d02da26cdcf237e.setIcon(icon_362ec92ecfb94f38a45846f05430781a);
+            
+    
+            var popup_c2b90267987f459abb665d51953676bb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_85407b0255b2473e98c4b4eb32435e0f = $(`<div id="html_85407b0255b2473e98c4b4eb32435e0f" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_c2b90267987f459abb665d51953676bb.setContent(html_85407b0255b2473e98c4b4eb32435e0f);
+            
+
+            marker_6d77d24995c049078d02da26cdcf237e.bindPopup(popup_c2b90267987f459abb665d51953676bb)
+            ;
+
+            
+        
+    
+        var marker_b65d6bff28ad4ecf8f9549e4a5b80f19 = L.marker(
+            [41.7678792, -87.683327303],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_8fbac313b5364751a6207741f80c7f5d = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b65d6bff28ad4ecf8f9549e4a5b80f19.setIcon(icon_8fbac313b5364751a6207741f80c7f5d);
+            
+    
+            var popup_6be73b3b269f495b81512e2f1f9c1654 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d0f140aca7b04b029eb2b56f193d99d2 = $(`<div id="html_d0f140aca7b04b029eb2b56f193d99d2" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_6be73b3b269f495b81512e2f1f9c1654.setContent(html_d0f140aca7b04b029eb2b56f193d99d2);
+            
+
+            marker_b65d6bff28ad4ecf8f9549e4a5b80f19.bindPopup(popup_6be73b3b269f495b81512e2f1f9c1654)
+            ;
+
+            
+        
+    
+        var marker_1543d672cb6346c2b3477a6e4743f388 = L.marker(
+            [41.890706333, -87.724723603],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ceec64e4e35249dabe6fa69d020382bc = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1543d672cb6346c2b3477a6e4743f388.setIcon(icon_ceec64e4e35249dabe6fa69d020382bc);
+            
+    
+            var popup_ce4fe877660b433c8e150b394217d039 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6cc0f0641aec42849066c27312374b6c = $(`<div id="html_6cc0f0641aec42849066c27312374b6c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ce4fe877660b433c8e150b394217d039.setContent(html_6cc0f0641aec42849066c27312374b6c);
+            
+
+            marker_1543d672cb6346c2b3477a6e4743f388.bindPopup(popup_ce4fe877660b433c8e150b394217d039)
+            ;
+
+            
+        
+    
+        var marker_928775da24eb4e81807b348bb09e94a4 = L.marker(
+            [41.876778257, -87.745602036],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_a216a8a4f7ff4e09a1497034e04ab898 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_928775da24eb4e81807b348bb09e94a4.setIcon(icon_a216a8a4f7ff4e09a1497034e04ab898);
+            
+    
+            var popup_9478ad24a6a3434986b3cead2754ffc1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5c05fefe65d548d5af68b4ecb257f1b2 = $(`<div id="html_5c05fefe65d548d5af68b4ecb257f1b2" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_9478ad24a6a3434986b3cead2754ffc1.setContent(html_5c05fefe65d548d5af68b4ecb257f1b2);
+            
+
+            marker_928775da24eb4e81807b348bb09e94a4.bindPopup(popup_9478ad24a6a3434986b3cead2754ffc1)
+            ;
+
+            
+        
+    
+        var marker_1f3ec9008a25490dbefe4d80b6b61aa6 = L.marker(
+            [41.899093421, -87.718157129],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_a54d1b84b41c46d3aefe1a958b415a22 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f3ec9008a25490dbefe4d80b6b61aa6.setIcon(icon_a54d1b84b41c46d3aefe1a958b415a22);
+            
+    
+            var popup_31413fa17d5a49d4ac36605ddea6b330 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_34c3ded0dabc4d8cb0e936e8413a0f2c = $(`<div id="html_34c3ded0dabc4d8cb0e936e8413a0f2c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_31413fa17d5a49d4ac36605ddea6b330.setContent(html_34c3ded0dabc4d8cb0e936e8413a0f2c);
+            
+
+            marker_1f3ec9008a25490dbefe4d80b6b61aa6.bindPopup(popup_31413fa17d5a49d4ac36605ddea6b330)
+            ;
+
+            
+        
+    
+        var marker_9a02140555ee42df8babff7bd5ab027c = L.marker(
+            [41.722521805, -87.626259274],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_81f0773eb22b4592b4275f26882cce5e = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9a02140555ee42df8babff7bd5ab027c.setIcon(icon_81f0773eb22b4592b4275f26882cce5e);
+            
+    
+            var popup_223a8aa49c72465cb3f80b30998418ec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_13e2c72c4ac844fd9c2a0b395f2e7ac1 = $(`<div id="html_13e2c72c4ac844fd9c2a0b395f2e7ac1" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_223a8aa49c72465cb3f80b30998418ec.setContent(html_13e2c72c4ac844fd9c2a0b395f2e7ac1);
+            
+
+            marker_9a02140555ee42df8babff7bd5ab027c.bindPopup(popup_223a8aa49c72465cb3f80b30998418ec)
+            ;
+
+            
+        
+    
+        var marker_1e978700e49d43eaa068dac09351fde5 = L.marker(
+            [41.87178962, -87.633564301],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_8c9c9464f2ef439883f980210b4f1033 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1e978700e49d43eaa068dac09351fde5.setIcon(icon_8c9c9464f2ef439883f980210b4f1033);
+            
+    
+            var popup_9d6f951e2c4c4f8da4e0f5e45229552e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2172315574e74e94928e779d73ecc88f = $(`<div id="html_2172315574e74e94928e779d73ecc88f" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_9d6f951e2c4c4f8da4e0f5e45229552e.setContent(html_2172315574e74e94928e779d73ecc88f);
+            
+
+            marker_1e978700e49d43eaa068dac09351fde5.bindPopup(popup_9d6f951e2c4c4f8da4e0f5e45229552e)
+            ;
+
+            
+        
+    
+        var marker_a4052f5eccd441e089ef6ad0f84757e8 = L.marker(
+            [41.881756669, -87.686445186],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_5a989a331de04643b38fe58f3fc1f32d = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4052f5eccd441e089ef6ad0f84757e8.setIcon(icon_5a989a331de04643b38fe58f3fc1f32d);
+            
+    
+            var popup_1240e190b5034f298697f1bc1f214085 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6229cc270b1b4a7d960e6e10469b74d0 = $(`<div id="html_6229cc270b1b4a7d960e6e10469b74d0" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_1240e190b5034f298697f1bc1f214085.setContent(html_6229cc270b1b4a7d960e6e10469b74d0);
+            
+
+            marker_a4052f5eccd441e089ef6ad0f84757e8.bindPopup(popup_1240e190b5034f298697f1bc1f214085)
+            ;
+
+            
+        
+    
+        var marker_0d7e6b7e679a44438ba96119f29d0d0b = L.marker(
+            [41.881756669, -87.686445186],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_babdb334053746ae9e659b8eaad07e49 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0d7e6b7e679a44438ba96119f29d0d0b.setIcon(icon_babdb334053746ae9e659b8eaad07e49);
+            
+    
+            var popup_70cd1f29e43848da8aa511c985c804fc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_219baea5894d42bcadb90b7958a49bd9 = $(`<div id="html_219baea5894d42bcadb90b7958a49bd9" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_70cd1f29e43848da8aa511c985c804fc.setContent(html_219baea5894d42bcadb90b7958a49bd9);
+            
+
+            marker_0d7e6b7e679a44438ba96119f29d0d0b.bindPopup(popup_70cd1f29e43848da8aa511c985c804fc)
+            ;
+
+            
+        
+    
+        var marker_a8907e9047d44ba999855afc3ef17bd5 = L.marker(
+            [41.791500125, -87.653591138],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_d8ad90e28f264a8b98b573d8b0fce52c = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a8907e9047d44ba999855afc3ef17bd5.setIcon(icon_d8ad90e28f264a8b98b573d8b0fce52c);
+            
+    
+            var popup_0369345bc7e246bc94dc12e7242f9a86 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4c0f67e263b14ae69be8748a3fb72237 = $(`<div id="html_4c0f67e263b14ae69be8748a3fb72237" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_0369345bc7e246bc94dc12e7242f9a86.setContent(html_4c0f67e263b14ae69be8748a3fb72237);
+            
+
+            marker_a8907e9047d44ba999855afc3ef17bd5.bindPopup(popup_0369345bc7e246bc94dc12e7242f9a86)
+            ;
+
+            
+        
+    
+        var marker_64783ee684d84320bf025bffef832107 = L.marker(
+            [41.895554406, -87.758068651],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_c962f6fd80814b20a11386d9a34316df = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_64783ee684d84320bf025bffef832107.setIcon(icon_c962f6fd80814b20a11386d9a34316df);
+            
+    
+            var popup_11c6e18b65ff45bfa6a5616b245efc72 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_556a6329a5924659bf401365948e8805 = $(`<div id="html_556a6329a5924659bf401365948e8805" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_11c6e18b65ff45bfa6a5616b245efc72.setContent(html_556a6329a5924659bf401365948e8805);
+            
+
+            marker_64783ee684d84320bf025bffef832107.bindPopup(popup_11c6e18b65ff45bfa6a5616b245efc72)
+            ;
+
+            
+        
+    
+        var marker_ebee6cd3968844c9a0f465fd6d105311 = L.marker(
+            [41.85982599, -87.705483467],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_8806a1655cce4a3da197e0335117ba14 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ebee6cd3968844c9a0f465fd6d105311.setIcon(icon_8806a1655cce4a3da197e0335117ba14);
+            
+    
+            var popup_f51fd06708464960aa582c7ba8ed7da2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f1f8e758e7f416d86e5fe9148e3118b = $(`<div id="html_3f1f8e758e7f416d86e5fe9148e3118b" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_f51fd06708464960aa582c7ba8ed7da2.setContent(html_3f1f8e758e7f416d86e5fe9148e3118b);
+            
+
+            marker_ebee6cd3968844c9a0f465fd6d105311.bindPopup(popup_f51fd06708464960aa582c7ba8ed7da2)
+            ;
+
+            
+        
+    
+        var marker_9435da0418a44d6897dbb7b317cb75a8 = L.marker(
+            [41.749776365, -87.665849993],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_57c28c0750a543a8ac2cb67096c48626 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9435da0418a44d6897dbb7b317cb75a8.setIcon(icon_57c28c0750a543a8ac2cb67096c48626);
+            
+    
+            var popup_f70a9a5c1e9d454d8021e0e86d6bc149 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1eee4ed4353548c0a6fdbcb2bd7de64c = $(`<div id="html_1eee4ed4353548c0a6fdbcb2bd7de64c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_f70a9a5c1e9d454d8021e0e86d6bc149.setContent(html_1eee4ed4353548c0a6fdbcb2bd7de64c);
+            
+
+            marker_9435da0418a44d6897dbb7b317cb75a8.bindPopup(popup_f70a9a5c1e9d454d8021e0e86d6bc149)
+            ;
+
+            
+        
+    
+        var marker_c802c3239e0747d680513c9c10c7944f = L.marker(
+            [41.923976215, -87.766294416],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_22eae4312d364b9caf527f3062f673b4 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c802c3239e0747d680513c9c10c7944f.setIcon(icon_22eae4312d364b9caf527f3062f673b4);
+            
+    
+            var popup_6746ddb9d57b4194882de5ea5440b14f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e17cf3de2f2142468c174fb568f5a83e = $(`<div id="html_e17cf3de2f2142468c174fb568f5a83e" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_6746ddb9d57b4194882de5ea5440b14f.setContent(html_e17cf3de2f2142468c174fb568f5a83e);
+            
+
+            marker_c802c3239e0747d680513c9c10c7944f.bindPopup(popup_6746ddb9d57b4194882de5ea5440b14f)
+            ;
+
+            
+        
+    
+        var marker_5cc5817ba2254670a7ac94e4a94c2ac9 = L.marker(
+            [41.874061932, -87.745696686],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_f409b3cc7e164ee990857bbb1573fc18 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5cc5817ba2254670a7ac94e4a94c2ac9.setIcon(icon_f409b3cc7e164ee990857bbb1573fc18);
+            
+    
+            var popup_ae6a95b976aa4b3abacea1cca1590454 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1d835e6837dc414db5fb1d8e5cb71269 = $(`<div id="html_1d835e6837dc414db5fb1d8e5cb71269" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ae6a95b976aa4b3abacea1cca1590454.setContent(html_1d835e6837dc414db5fb1d8e5cb71269);
+            
+
+            marker_5cc5817ba2254670a7ac94e4a94c2ac9.bindPopup(popup_ae6a95b976aa4b3abacea1cca1590454)
+            ;
+
+            
+        
+    
+        var marker_943a854ec4aa43119b9cec6bad4477b2 = L.marker(
+            [41.868261909, -87.702493167],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_b6812b0c1b2f4122a3b9cebb4abb15b0 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_943a854ec4aa43119b9cec6bad4477b2.setIcon(icon_b6812b0c1b2f4122a3b9cebb4abb15b0);
+            
+    
+            var popup_d2329932fa8b4af4924c077b78496046 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eca572e0b7754d9491dd020318710fc4 = $(`<div id="html_eca572e0b7754d9491dd020318710fc4" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_d2329932fa8b4af4924c077b78496046.setContent(html_eca572e0b7754d9491dd020318710fc4);
+            
+
+            marker_943a854ec4aa43119b9cec6bad4477b2.bindPopup(popup_d2329932fa8b4af4924c077b78496046)
+            ;
+
+            
+        
+    
+        var marker_8bce956491d743459ff23f34946d8241 = L.marker(
+            [41.860168642, -87.707928641],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_87fc1001f65c4462852bd68608d78e0b = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8bce956491d743459ff23f34946d8241.setIcon(icon_87fc1001f65c4462852bd68608d78e0b);
+            
+    
+            var popup_196c2061cfd249f3bd181f25a629e6e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b8d9ab072ad546afa9d4bb4170bf4e1d = $(`<div id="html_b8d9ab072ad546afa9d4bb4170bf4e1d" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_196c2061cfd249f3bd181f25a629e6e3.setContent(html_b8d9ab072ad546afa9d4bb4170bf4e1d);
+            
+
+            marker_8bce956491d743459ff23f34946d8241.bindPopup(popup_196c2061cfd249f3bd181f25a629e6e3)
+            ;
+
+            
+        
+    
+        var marker_197ce83385f94ef4845a084b7af31d71 = L.marker(
+            [41.89609684, -87.715115251],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_f744c456c0cd41268e60193e79c77d0c = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_197ce83385f94ef4845a084b7af31d71.setIcon(icon_f744c456c0cd41268e60193e79c77d0c);
+            
+    
+            var popup_1a1154936bb544748d069d092e2dffe5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_266b2b2fadca498b85992b7e070f9187 = $(`<div id="html_266b2b2fadca498b85992b7e070f9187" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_1a1154936bb544748d069d092e2dffe5.setContent(html_266b2b2fadca498b85992b7e070f9187);
+            
+
+            marker_197ce83385f94ef4845a084b7af31d71.bindPopup(popup_1a1154936bb544748d069d092e2dffe5)
+            ;
+
+            
+        
+    
+        var marker_999ee8ed548c4669ac1cf8ed740dca25 = L.marker(
+            [41.885615086, -87.75704141],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_da94d152a12c47d98287a55ba0b4f1b3 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_999ee8ed548c4669ac1cf8ed740dca25.setIcon(icon_da94d152a12c47d98287a55ba0b4f1b3);
+            
+    
+            var popup_a83bcdaffa764f8085692e3880c3d1bc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fb7001c0ce0b4b9eab1b585d9ca945e5 = $(`<div id="html_fb7001c0ce0b4b9eab1b585d9ca945e5" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_a83bcdaffa764f8085692e3880c3d1bc.setContent(html_fb7001c0ce0b4b9eab1b585d9ca945e5);
+            
+
+            marker_999ee8ed548c4669ac1cf8ed740dca25.bindPopup(popup_a83bcdaffa764f8085692e3880c3d1bc)
+            ;
+
+            
+        
+    
+        var marker_4b32adf33b61463f902bc32748801add = L.marker(
+            [41.809347098, -87.618919216],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_f44d055abfc3479eac7d5ed31e98d560 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4b32adf33b61463f902bc32748801add.setIcon(icon_f44d055abfc3479eac7d5ed31e98d560);
+            
+    
+            var popup_abe2a88bb44c443c9cd034e089338058 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2eafe839a7df4c0ab2f6cd1585767a75 = $(`<div id="html_2eafe839a7df4c0ab2f6cd1585767a75" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_abe2a88bb44c443c9cd034e089338058.setContent(html_2eafe839a7df4c0ab2f6cd1585767a75);
+            
+
+            marker_4b32adf33b61463f902bc32748801add.bindPopup(popup_abe2a88bb44c443c9cd034e089338058)
+            ;
+
+            
+        
+    
+        var marker_07a26b95ae614a59913fb1de1d4ce038 = L.marker(
+            [41.901733457, -87.723832804],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_42c7feeb6d9346d58542cc19b22b4524 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_07a26b95ae614a59913fb1de1d4ce038.setIcon(icon_42c7feeb6d9346d58542cc19b22b4524);
+            
+    
+            var popup_b5706c55085b4607a969f4d2406b2acd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30ea288e7e994a9eb7c15ea66204e05c = $(`<div id="html_30ea288e7e994a9eb7c15ea66204e05c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_b5706c55085b4607a969f4d2406b2acd.setContent(html_30ea288e7e994a9eb7c15ea66204e05c);
+            
+
+            marker_07a26b95ae614a59913fb1de1d4ce038.bindPopup(popup_b5706c55085b4607a969f4d2406b2acd)
+            ;
+
+            
+        
+    
+        var marker_46dfaa5a2f574c1e8bc3d52bd41aff1a = L.marker(
+            [41.861810516, -87.717729022],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_a580be35508d446db0c0d5b02388c16d = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46dfaa5a2f574c1e8bc3d52bd41aff1a.setIcon(icon_a580be35508d446db0c0d5b02388c16d);
+            
+    
+            var popup_573c28726f69405381112ede1ffd0247 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_65cb939b5e634cc690fac3f322ef6850 = $(`<div id="html_65cb939b5e634cc690fac3f322ef6850" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_573c28726f69405381112ede1ffd0247.setContent(html_65cb939b5e634cc690fac3f322ef6850);
+            
+
+            marker_46dfaa5a2f574c1e8bc3d52bd41aff1a.bindPopup(popup_573c28726f69405381112ede1ffd0247)
+            ;
+
+            
+        
+    
+        var marker_ec70f388b6154b129efe2276f2f37ec4 = L.marker(
+            [41.858530159, -87.713975828],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_56699704c51e4ac49972947c98b5627a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ec70f388b6154b129efe2276f2f37ec4.setIcon(icon_56699704c51e4ac49972947c98b5627a);
+            
+    
+            var popup_9251dfbd1f694cecab6d043cee2c96b4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3d8eb96f3f84a8cb2cba5f68b0e1377 = $(`<div id="html_e3d8eb96f3f84a8cb2cba5f68b0e1377" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_9251dfbd1f694cecab6d043cee2c96b4.setContent(html_e3d8eb96f3f84a8cb2cba5f68b0e1377);
+            
+
+            marker_ec70f388b6154b129efe2276f2f37ec4.bindPopup(popup_9251dfbd1f694cecab6d043cee2c96b4)
+            ;
+
+            
+        
+    
+        var marker_921b38316032449ab8159ef53d11b36c = L.marker(
+            [41.872816153, -87.702272146],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_9bf433f332b44c268c9691cd884cfa4b = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_921b38316032449ab8159ef53d11b36c.setIcon(icon_9bf433f332b44c268c9691cd884cfa4b);
+            
+    
+            var popup_2274191edf72425d87f4ecd277370116 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e464db7837a64d399447bfa8f286e09a = $(`<div id="html_e464db7837a64d399447bfa8f286e09a" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_2274191edf72425d87f4ecd277370116.setContent(html_e464db7837a64d399447bfa8f286e09a);
+            
+
+            marker_921b38316032449ab8159ef53d11b36c.bindPopup(popup_2274191edf72425d87f4ecd277370116)
+            ;
+
+            
+        
+    
+        var marker_8dd96982817c49d598f63b5f9ef8b446 = L.marker(
+            [41.89503004, -87.744490779],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_55d3c59fe06f478188ad2d2b64541363 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8dd96982817c49d598f63b5f9ef8b446.setIcon(icon_55d3c59fe06f478188ad2d2b64541363);
+            
+    
+            var popup_8202ea14e84242379e47078caa05e6b6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc9a2da4bb3943759c4ba052299ef69b = $(`<div id="html_dc9a2da4bb3943759c4ba052299ef69b" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_8202ea14e84242379e47078caa05e6b6.setContent(html_dc9a2da4bb3943759c4ba052299ef69b);
+            
+
+            marker_8dd96982817c49d598f63b5f9ef8b446.bindPopup(popup_8202ea14e84242379e47078caa05e6b6)
+            ;
+
+            
+        
+    
+        var marker_e2c7556c50e34b8c8c591676ae509865 = L.marker(
+            [41.86539851, -87.71950086],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_2ecc36dbbf5442e7bed6000570517d8c = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e2c7556c50e34b8c8c591676ae509865.setIcon(icon_2ecc36dbbf5442e7bed6000570517d8c);
+            
+    
+            var popup_781d8c7aa8b746a9b4d97b8a649817ec = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_92091d584a3041a1bca21cfe94ad616b = $(`<div id="html_92091d584a3041a1bca21cfe94ad616b" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_781d8c7aa8b746a9b4d97b8a649817ec.setContent(html_92091d584a3041a1bca21cfe94ad616b);
+            
+
+            marker_e2c7556c50e34b8c8c591676ae509865.bindPopup(popup_781d8c7aa8b746a9b4d97b8a649817ec)
+            ;
+
+            
+        
+    
+        var marker_ca3e911c19e542f09107931b6f3ed13f = L.marker(
+            [41.88093546, -87.709132611],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_4461895c9ac44f8a96e489a9b04e73db = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ca3e911c19e542f09107931b6f3ed13f.setIcon(icon_4461895c9ac44f8a96e489a9b04e73db);
+            
+    
+            var popup_f449be0fd9dc4e53a839cea2b0ab94d8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_771e103780034eecbf0366110a046edf = $(`<div id="html_771e103780034eecbf0366110a046edf" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_f449be0fd9dc4e53a839cea2b0ab94d8.setContent(html_771e103780034eecbf0366110a046edf);
+            
+
+            marker_ca3e911c19e542f09107931b6f3ed13f.bindPopup(popup_f449be0fd9dc4e53a839cea2b0ab94d8)
+            ;
+
+            
+        
+    
+        var marker_ea3e20f378b6444ab0b2b6945f4d3ae2 = L.marker(
+            [41.772411722, -87.729919689],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_7ef16706f0414ff9a804c16979ea1f49 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ea3e20f378b6444ab0b2b6945f4d3ae2.setIcon(icon_7ef16706f0414ff9a804c16979ea1f49);
+            
+    
+            var popup_3260afc8715b454aa2f2f12f2f68df67 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_978e717b490c43728581f6cff2514930 = $(`<div id="html_978e717b490c43728581f6cff2514930" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_3260afc8715b454aa2f2f12f2f68df67.setContent(html_978e717b490c43728581f6cff2514930);
+            
+
+            marker_ea3e20f378b6444ab0b2b6945f4d3ae2.bindPopup(popup_3260afc8715b454aa2f2f12f2f68df67)
+            ;
+
+            
+        
+    
+        var marker_6c6632fab5e9499bace02153d03861cf = L.marker(
+            [41.772292412, -87.608189787],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_77efa5ffb1b3449aac3cb08e74b36d83 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c6632fab5e9499bace02153d03861cf.setIcon(icon_77efa5ffb1b3449aac3cb08e74b36d83);
+            
+    
+            var popup_ff7096ad60944887bf4103a497fbe833 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_34dcf9c50ce8444ab2b49c9e16fd3303 = $(`<div id="html_34dcf9c50ce8444ab2b49c9e16fd3303" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ff7096ad60944887bf4103a497fbe833.setContent(html_34dcf9c50ce8444ab2b49c9e16fd3303);
+            
+
+            marker_6c6632fab5e9499bace02153d03861cf.bindPopup(popup_ff7096ad60944887bf4103a497fbe833)
+            ;
+
+            
+        
+    
+        var marker_f325540ae8f74584befd17d9bf05553c = L.marker(
+            [41.871025414, -87.699510379],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_30f64f6a7a5646b49537d4e97127bf34 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f325540ae8f74584befd17d9bf05553c.setIcon(icon_30f64f6a7a5646b49537d4e97127bf34);
+            
+    
+            var popup_57c461e9ac734dae885753df719bc246 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a3d25a5c35254ebc87d6478d4e73a91f = $(`<div id="html_a3d25a5c35254ebc87d6478d4e73a91f" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_57c461e9ac734dae885753df719bc246.setContent(html_a3d25a5c35254ebc87d6478d4e73a91f);
+            
+
+            marker_f325540ae8f74584befd17d9bf05553c.bindPopup(popup_57c461e9ac734dae885753df719bc246)
+            ;
+
+            
+        
+    
+        var marker_0f820179e66e4794b3313452078dbe13 = L.marker(
+            [41.95270341, -87.688430339],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_5f0b07b98b3046a3b0cbd0f5d7d43319 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f820179e66e4794b3313452078dbe13.setIcon(icon_5f0b07b98b3046a3b0cbd0f5d7d43319);
+            
+    
+            var popup_7a88a997ce864123841d41ea7f4db372 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0e245986c2c44c2af53f5aea2f61c99 = $(`<div id="html_f0e245986c2c44c2af53f5aea2f61c99" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_7a88a997ce864123841d41ea7f4db372.setContent(html_f0e245986c2c44c2af53f5aea2f61c99);
+            
+
+            marker_0f820179e66e4794b3313452078dbe13.bindPopup(popup_7a88a997ce864123841d41ea7f4db372)
+            ;
+
+            
+        
+    
+        var marker_4c2458664eaf4b98819733ddd7a0df95 = L.marker(
+            [41.91027686, -87.731227769],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_62a0bb89290e433893aa3da1dada47a5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4c2458664eaf4b98819733ddd7a0df95.setIcon(icon_62a0bb89290e433893aa3da1dada47a5);
+            
+    
+            var popup_b295ebaea82a4163ac64e07ee6332aff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e5e578eb65f447959a5f6d477771bb86 = $(`<div id="html_e5e578eb65f447959a5f6d477771bb86" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_b295ebaea82a4163ac64e07ee6332aff.setContent(html_e5e578eb65f447959a5f6d477771bb86);
+            
+
+            marker_4c2458664eaf4b98819733ddd7a0df95.bindPopup(popup_b295ebaea82a4163ac64e07ee6332aff)
+            ;
+
+            
+        
+    
+        var marker_dd4814e2a37f403184aa4c2bb22bc271 = L.marker(
+            [41.852314177, -87.702837091],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_58ca79531bd942b1b603039baf2db15a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dd4814e2a37f403184aa4c2bb22bc271.setIcon(icon_58ca79531bd942b1b603039baf2db15a);
+            
+    
+            var popup_ea9ead5834fb468c84ad926ab6964e84 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a7f2fa53916d413088fea01b13329149 = $(`<div id="html_a7f2fa53916d413088fea01b13329149" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_ea9ead5834fb468c84ad926ab6964e84.setContent(html_a7f2fa53916d413088fea01b13329149);
+            
+
+            marker_dd4814e2a37f403184aa4c2bb22bc271.bindPopup(popup_ea9ead5834fb468c84ad926ab6964e84)
+            ;
+
+            
+        
+    
+        var marker_b1dfbb4f3b2c4ca99d321c1d52f78f03 = L.marker(
+            [41.879268593, -87.694952704],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_7ac167a087bd4fcc8b68f91d2325c03a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1dfbb4f3b2c4ca99d321c1d52f78f03.setIcon(icon_7ac167a087bd4fcc8b68f91d2325c03a);
+            
+    
+            var popup_b9127711c9704456a11afe4642f74809 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e7740166a3de4d3d8dfddd54356565af = $(`<div id="html_e7740166a3de4d3d8dfddd54356565af" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_b9127711c9704456a11afe4642f74809.setContent(html_e7740166a3de4d3d8dfddd54356565af);
+            
+
+            marker_b1dfbb4f3b2c4ca99d321c1d52f78f03.bindPopup(popup_b9127711c9704456a11afe4642f74809)
+            ;
+
+            
+        
+    
+        var marker_d70f44610b5c4e49b10f15b5df01b6fd = L.marker(
+            [41.851785907, -87.703587385],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_b38c8076cc6344b188e15bd1dc9329bc = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d70f44610b5c4e49b10f15b5df01b6fd.setIcon(icon_b38c8076cc6344b188e15bd1dc9329bc);
+            
+    
+            var popup_46e36200c9094b28af65ac785d750ecb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c19171da1e924dd09fab43f1aa9e383c = $(`<div id="html_c19171da1e924dd09fab43f1aa9e383c" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_46e36200c9094b28af65ac785d750ecb.setContent(html_c19171da1e924dd09fab43f1aa9e383c);
+            
+
+            marker_d70f44610b5c4e49b10f15b5df01b6fd.bindPopup(popup_46e36200c9094b28af65ac785d750ecb)
+            ;
+
+            
+        
+    
+        var marker_60d812c6b5034431800606f17dfb6ed0 = L.marker(
+            [41.894674537, -87.711411964],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_78db1f75d2c1455a9831f778574fb5f9 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60d812c6b5034431800606f17dfb6ed0.setIcon(icon_78db1f75d2c1455a9831f778574fb5f9);
+            
+    
+            var popup_6c54ca2bb03b47c2837fe474d81a0f41 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_84d6db1cad3b488a8199374aed9fb53f = $(`<div id="html_84d6db1cad3b488a8199374aed9fb53f" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_6c54ca2bb03b47c2837fe474d81a0f41.setContent(html_84d6db1cad3b488a8199374aed9fb53f);
+            
+
+            marker_60d812c6b5034431800606f17dfb6ed0.bindPopup(popup_6c54ca2bb03b47c2837fe474d81a0f41)
+            ;
+
+            
+        
+    
+        var marker_e497b20d991341018e4f3a600d84f77a = L.marker(
+            [41.877104077, -87.724390016],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_07164cd5d2f042e4a1f3569b29b022c5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e497b20d991341018e4f3a600d84f77a.setIcon(icon_07164cd5d2f042e4a1f3569b29b022c5);
+            
+    
+            var popup_6c7c7c7915b649a0931c08e437829dc7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5114ce6c72f4430e9cfbf9561227a989 = $(`<div id="html_5114ce6c72f4430e9cfbf9561227a989" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_6c7c7c7915b649a0931c08e437829dc7.setContent(html_5114ce6c72f4430e9cfbf9561227a989);
+            
+
+            marker_e497b20d991341018e4f3a600d84f77a.bindPopup(popup_6c7c7c7915b649a0931c08e437829dc7)
+            ;
+
+            
+        
+    
+        var marker_b1077c28dce84193b494bd5580e4add3 = L.marker(
+            [41.874850606, -87.735272577],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ebc1409507f64c3f9f57189d78237000 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b1077c28dce84193b494bd5580e4add3.setIcon(icon_ebc1409507f64c3f9f57189d78237000);
+            
+    
+            var popup_deefe8d000b845968a54cb7674c01b64 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d199e542c73140cf9e7b008cca0fbb2e = $(`<div id="html_d199e542c73140cf9e7b008cca0fbb2e" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_deefe8d000b845968a54cb7674c01b64.setContent(html_d199e542c73140cf9e7b008cca0fbb2e);
+            
+
+            marker_b1077c28dce84193b494bd5580e4add3.bindPopup(popup_deefe8d000b845968a54cb7674c01b64)
+            ;
+
+            
+        
+    
+        var marker_834d565b35ad40e2b12a7cde8ee1fba3 = L.marker(
+            [41.867697344, -87.697156855],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_9834f2694c0c45839258b44ec12c547d = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_834d565b35ad40e2b12a7cde8ee1fba3.setIcon(icon_9834f2694c0c45839258b44ec12c547d);
+            
+    
+            var popup_d5edcd0f216146ac864ea45877421097 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3dcd657d6e5e4d4a9ac482255fcc4ebe = $(`<div id="html_3dcd657d6e5e4d4a9ac482255fcc4ebe" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_d5edcd0f216146ac864ea45877421097.setContent(html_3dcd657d6e5e4d4a9ac482255fcc4ebe);
+            
+
+            marker_834d565b35ad40e2b12a7cde8ee1fba3.bindPopup(popup_d5edcd0f216146ac864ea45877421097)
+            ;
+
+            
+        
+    
+        var marker_26fb4a04aae2429fb369b1b587f54ae9 = L.marker(
+            [41.721670233, -87.627909657],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_133d649220a34e2b9a6ead716fd2df71 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_26fb4a04aae2429fb369b1b587f54ae9.setIcon(icon_133d649220a34e2b9a6ead716fd2df71);
+            
+    
+            var popup_cdbd416f80a4419abf2d964a838ce91c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bd43b59f7e754300a9f2fe518ce10ab4 = $(`<div id="html_bd43b59f7e754300a9f2fe518ce10ab4" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_cdbd416f80a4419abf2d964a838ce91c.setContent(html_bd43b59f7e754300a9f2fe518ce10ab4);
+            
+
+            marker_26fb4a04aae2429fb369b1b587f54ae9.bindPopup(popup_cdbd416f80a4419abf2d964a838ce91c)
+            ;
+
+            
+        
+    
+        var marker_13d20c1cf6e34bb58d9e83f8153223ca = L.marker(
+            [41.866260623, -87.71855276],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_ba4e10b2abac460db296aa82fea49e15 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13d20c1cf6e34bb58d9e83f8153223ca.setIcon(icon_ba4e10b2abac460db296aa82fea49e15);
+            
+    
+            var popup_03aedcc65ae74ae4887ca4552bd38e85 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_50e2952e67c647878455cc340736ea75 = $(`<div id="html_50e2952e67c647878455cc340736ea75" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_03aedcc65ae74ae4887ca4552bd38e85.setContent(html_50e2952e67c647878455cc340736ea75);
+            
+
+            marker_13d20c1cf6e34bb58d9e83f8153223ca.bindPopup(popup_03aedcc65ae74ae4887ca4552bd38e85)
+            ;
+
+            
+        
+    
+        var marker_a3025c2a7e9a470f98e74e686ad0c740 = L.marker(
+            [41.983373861, -87.695524775],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_068f14370ecf4cb68288c3ae9afc09d2 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a3025c2a7e9a470f98e74e686ad0c740.setIcon(icon_068f14370ecf4cb68288c3ae9afc09d2);
+            
+    
+            var popup_7fde941402834245a4b8bc3d3d0a433d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9783b1308c494d0289b33e3833ef9e4a = $(`<div id="html_9783b1308c494d0289b33e3833ef9e4a" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_7fde941402834245a4b8bc3d3d0a433d.setContent(html_9783b1308c494d0289b33e3833ef9e4a);
+            
+
+            marker_a3025c2a7e9a470f98e74e686ad0c740.bindPopup(popup_7fde941402834245a4b8bc3d3d0a433d)
+            ;
+
+            
+        
+    
+        var marker_df5f27c7804e450a935b5e7d9798f96a = L.marker(
+            [41.778864596, -87.6642029],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_f93ee96705334a65b39d579f5fded83f);
+        
+    
+
+                var icon_474aa68d33e34b93a90cd64ebfa48d24 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_df5f27c7804e450a935b5e7d9798f96a.setIcon(icon_474aa68d33e34b93a90cd64ebfa48d24);
+            
+    
+            var popup_33b8c672d38b4952ad8f60f4b45cd1ac = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fc9f9b78a8524be68230439a7c4995c2 = $(`<div id="html_fc9f9b78a8524be68230439a7c4995c2" style="width: 100.0%; height: 100.0%;">NARCOTICS</div>`)[0];
+                popup_33b8c672d38b4952ad8f60f4b45cd1ac.setContent(html_fc9f9b78a8524be68230439a7c4995c2);
+            
+
+            marker_df5f27c7804e450a935b5e7d9798f96a.bindPopup(popup_33b8c672d38b4952ad8f60f4b45cd1ac)
+            ;
+
+            
+        
+</script>

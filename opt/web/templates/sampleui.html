@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Chicago Crime Data Exploration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/static/css/font-awesome.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="/static/js/Chart.min.js"></script>
+        <script src="/static/js/modernizr.min.js" type="text/javascript"></script>
+        <script src="/static/js/chartinator.js" ></script>
+        <script src="/static/js/skycons.js"></script>
+        <style>
+            .chartWrapper {
+            position: relative;
+        }
+
+        .chartWrapper > canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            pointer-events:none;
+        }
+
+        .chartAreaWrapper {
+            width: 1000px;
+            overflow-x: scroll;
+        }
+
+        </style>
+    </head>
+    <body style="width:100%;">	
+        <div class="page-container">	
+            <div class="left-content">
+                <div class="mother-grid-inner">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div><h3 style="color:white;">Chicago Crime Data Exploration</h3></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="header-right">
+                            <div class="profile_details_left">
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="clearfix"></div>				
+                        </div>
+                        <div class="clearfix"></div>	
+                    </div>
+                    <div class="inner-block">
+                        <div class="market-updates">
+                            <div class="col-md-4 market-update-gd">
+                                <div class="market-update-block clr-block-1">
+                                    <div class="col-md-8 market-update-left">
+                                        <h5 style="color:darkslategray">CRIME FREQUENCIES</h5>
+                                    </div>
+                                    <div class="col-md-4 market-update-right">
+                                        <i class="fas fa-chart-bar" style="font-size:60px;color:darkslategray"> </i>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 market-update-gd">
+                                <div class="market-update-block clr-block-2">
+                                    <div class="col-md-8 market-update-left">
+                                        <h5 style="color:darkslategray">CRIME MAPPING</h5>
+                                    </div>
+                                    <div class="col-md-4 market-update-right">
+                                        <i class="fas fa-globe" style="font-size:60px;color:darkslategray"> </i>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 market-update-gd">
+                                <div class="market-update-block clr-block-3">
+                                    <div class="col-md-8 market-update-left">
+                                        <h5 style="color:darkslategray">CRIME DISTRIBUTION</h5>
+                                    </div>
+                                    <div class="col-md-4 market-update-right" >
+                                        <i class="fas fa-map-marker-alt" style="font-size:60px;color:darkslategray"> </i>
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="chit-chat-layer1" id="plotdivid">	
+                            <div class="col-md-6 chit-chat-layer1-rit" id="plotdiv">
+                                    {% if name_send6 is defined %}  
+                                <video id="my-video" width="1490px" height="540px" autoplay muted loop>
+                                    <source src="/static/Heatmap_video.mp4" type="video/mp4">
+                                </video>
+                                {% endif %}
+                            {% if name_send is defined %}  
+                                <img src={{url}} alt='Chart' height="540" width="1490">  	
+                            {% endif %}
+                            {% if name_send2 is defined %}  
+                            <canvas id='chart' class='chart' style="height:540;width:1200;"></canvas>
+                            <p style="color:white;font-size:30px;">Hours of a day</p>
+                            {% endif %}
+                            {% if name_send3 is defined %}  
+                            <div class="chartWrapper">
+                            <div class="chartAreaWrapper">
+                                <canvas id='chart' class='chart' style="height:740;width:1900;"></canvas>
+                            </div>
+                            <canvas id='myChartAxis' class='chart' style="height:740;width:0;"></canvas>
+                        </div>
+                            {% endif %}
+                            {% if name_send4 is defined %}  
+                            <canvas id='chart' class='chart' style="height:540;width:1200;"></canvas>
+                            <p style="color:white;">Crime type</p>
+
+                            {% endif %}
+                        </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                         </div>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="logo"> <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#"> <span id="logo" ></span> </a> </div>    <div class="menu">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <ul id="menu" >
+                        <li><a href="{{url_for('map_call')}}" target="_blank"><i class="fa fa-cogs"></i><span>Crime Records</span></a></li>
+                        <br/>
+                        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Crime Distribution - Types</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                            <ul id="menu-academico-sub" >
+                                <li id="menu-academico-boletim" ><a href='/option/NARCOTICS' target="_blank">Narcotics Crime</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/MOTOR VEHICLE THEFT' target="_blank">Motor Vehicle</a></li>	
+                                <li id="menu-academico-avaliacoes" ><a href= '/option/THEFT' target="_blank" >Theft Crime</a></li>	
+                                <li id="menu-academico-avaliacoes" ><a href='/option/CRIMINAL DAMAGE' target="_blank" >Criminal Damage</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/BATTERY'target="_blank" >Battery Crime</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/ASSAULT' target="_blank" >Assualt Crime</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/ROBBERY'target="_blank" >Robbery Crime</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/DECEPTIVE PRACTICE' target="_blank">Deceptive Practice</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/BURGLARY' target="_blank">Burglary Crime</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href='/option/OTHER OFFENSE'target="_blank">Other Offense</a></li>	
+                            </ul>
+                        </li>
+                        <br/>
+                        <li id="menu-academico" ><a href="#"><i class="fa fa-file-text"></i><span>Crime Distribution - Year</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                            <ul id="menu-academico-sub" >
+                                <li id="menu-academico-boletim" ><a href="{{url_for('one')}}"  target="_blank">2001-2004</a></li>
+                                <li id="menu-academico-avaliacoes" ><a href="{{url_for('two')}}"  target="_blank">2005-2008</a></li>	
+                                <li id="menu-academico-avaliacoes" ><a href="{{url_for('three')}}"  target="_blank">2009-2011</a></li>	
+                                <li id="menu-academico-avaliacoes" ><a href="{{url_for('four')}}" target="_blank">2012-2017</a></li>
+                            </ul>
+                        </li>
+                        <br/>
+                        <li id="menu-academico" ><a href="{{url_for('crime_type_plot')}}"><i class="fa fa-bar-chart"></i><span>Crime Distribution - Count</span></a>
+                        </li>
+                        <br/>
+                        <li id="menu-academico" ><a href="{{url_for('crime_loc_plot')}}"><i class="fa fa-bar-chart"></i><span>Crime Distribution - Places</span></a></li>
+                        <br/>
+                        <li><a href="{{url_for('crime_date_plot')}}"><i class="fa fa-bar-chart"></i><span>Crime Distribution - Hour</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+        <script src="https://cdn.plot.ly/plotly-latest.min.js?_ga=2.255417804.593150570.1555693992-1180094867.1555553205"></script>
+<script>
+var lineData ={labels :[{% for item3 in labels3 %}
+                            "{{item3}}",
+                         {% endfor %}],
+                datasets : [{
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                data : [{% for item3 in values3 %}
+                      {{item3}},
+                    {% endfor %}],
+                
+      }]
+   }
+// get bar chart canvas
+var mychart3 = document.getElementById("chart").getContext("2d");
+steps3 = 5000
+max3 = 500000
+// draw bar chart
+new Chart(mychart3).Line(lineData, {
+    onAnimationComplete: function () {
+                var sourceCanvas = this.chart.ctx.canvas;
+                var copyWidth = this.scale.xScalePaddingLeft - 5;
+                // the +5 is so that the bottommost y axis label is not clipped off
+                // we could factor this in using measureText if we wanted to be generic
+                var copyHeight = this.scale.endPoint + 5;
+                var targetCtx = document.getElementById("myChartAxis").getContext("2d");
+                targetCtx.canvas.width = copyWidth;
+                targetCtx.drawImage(sourceCanvas, 0, 0, copyWidth, copyHeight, 0, 0, copyWidth, copyHeight);
+            },
+        scaleOverride: true,
+        scaleSteps: steps3,
+        scaleStepWidth: Math.ceil(max3/ steps3),
+        scaleStartValue: 0,
+        scaleShowVerticalLines: false,
+        scaleShowGridLines : false,
+        barShowStroke : false,
+        scaleShowLabels: false,
+        pointLabelFontSize:10,
+      
+   });
+
+</script>
+              <script>
+           var lineData ={labels :[{% for item2 in labels2 %}
+                            "{{item2}}",
+                         {% endfor %}],
+                datasets : [{
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                data : [{% for item2 in values2 %}
+                      {{item2}},
+                    {% endfor %}],
+                
+      }]
+   }
+// get bar chart canvas
+var mychart2 = document.getElementById("chart").getContext("2d");
+steps2 = 10
+max2 = 85000
+// draw bar chart
+new Chart(mychart2).Line(lineData, {
+        scaleOverride: true,
+        scaleSteps: steps2,
+        scaleStepWidth: Math.ceil(max2/ steps2),
+        scaleStartValue: 0,
+        scaleShowVerticalLines: true,
+        scaleShowGridLines : true,
+        barShowStroke : true,
+        scaleShowLabels: true,
+        pointLabelFontSize:20,
+      
+   });
+
+        </script>
+        <script type='text/javascript'>
+   // bar chart data
+
+   var barData ={labels :[{% for item in labels %}
+                            "{{item}}",
+                         {% endfor %}],
+                datasets : [{
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                data : [{% for item in values %}
+                      {{item}},
+                    {% endfor %}],
+                
+      }]
+   }
+// get bar chart canvas
+var mychart = document.getElementById("chart").getContext("2d");
+steps = 10
+max = 330000
+// draw bar chart
+new Chart(mychart).Bar(barData, {
+        scaleOverride: true,
+        scaleSteps: steps,
+        scaleStepWidth: Math.ceil(max / steps),
+        scaleStartValue: 0,
+        scaleShowVerticalLines: true,
+        scaleShowGridLines : true,
+        barShowStroke : true,
+        scaleShowLabels: true,
+        pointLabelFontSize:20
+
+   });
+            var toggle = true;         
+            $(".sidebar-icon").click(function() {                
+                if (toggle)
+                {
+                    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+                    $("#menu span").css({"position":"absolute"});
+                }
+                else
+                {
+                    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+                    setTimeout(function() {
+                        $("#menu span").css({"position":"relative"});}, 400);
+                }               
+                toggle = !toggle;});
+                document.getElementById("my-video").playbackRate = 0.5;
+        </script>
+
+        <script src="/static/js/jquery.nicescroll.js"></script>
+        <script src="/static/js/scripts.js"></script>
+        <script src="/static/js/bootstrap.js"> </script>
+    </body>
+</html>                     
+                   
