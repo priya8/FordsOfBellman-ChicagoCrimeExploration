@@ -7,7 +7,7 @@ Jayadharshini Jaiganesh </br>
 Shemal Lalaji </br>
 
 # teams-fords-of-bellman-repositories</br>
-This repository contains all the trial codes which we tried during exploring all the options/technologies <br/>
+This repository contains all our codes that we wrote during the course of this project <br/>
 
 ###### Jayadharshini Jaiganesh's Contribution <br/>
 1. Backend Code Version 1 <br/>
