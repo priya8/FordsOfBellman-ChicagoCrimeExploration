@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_77a625a17894487595ad04bd6b25d2ef {
+        position: relative;
+        height: 100% !important;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_77a625a17894487595ad04bd6b25d2ef" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_77a625a17894487595ad04bd6b25d2ef = L.map(
+        'map_77a625a17894487595ad04bd6b25d2ef', {
+        center: [41.8369, -87.6847],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_a69e003983b8416f8062598f1cf2c00d = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+    
+        var marker_f9bd9e264e544f648986d1d047af8495 = L.marker(
+            [41.682477876, -87.654230938],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_d5027b582645434eacd91696a6583860 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9bd9e264e544f648986d1d047af8495.setIcon(icon_d5027b582645434eacd91696a6583860);
+            
+    
+            var popup_622b00ab91e04c79bc06f448455e6683 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_24110de635444eabb463ea9cfb5776a8 = $(`<div id="html_24110de635444eabb463ea9cfb5776a8" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_622b00ab91e04c79bc06f448455e6683.setContent(html_24110de635444eabb463ea9cfb5776a8);
+            
+
+            marker_f9bd9e264e544f648986d1d047af8495.bindPopup(popup_622b00ab91e04c79bc06f448455e6683)
+            ;
+
+            
+        
+    
+        var marker_cb7014c2448b4a7b8a563bf884f5d5bc = L.marker(
+            [41.771641201, -87.668860349],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_b900179cd5b44a9fa75711bbd262f11b = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cb7014c2448b4a7b8a563bf884f5d5bc.setIcon(icon_b900179cd5b44a9fa75711bbd262f11b);
+            
+    
+            var popup_a9050f5d7b794fd29dd3b6c8ab9ddf6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2579517a6e2c437c89e896da3338e810 = $(`<div id="html_2579517a6e2c437c89e896da3338e810" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_a9050f5d7b794fd29dd3b6c8ab9ddf6f.setContent(html_2579517a6e2c437c89e896da3338e810);
+            
+
+            marker_cb7014c2448b4a7b8a563bf884f5d5bc.bindPopup(popup_a9050f5d7b794fd29dd3b6c8ab9ddf6f)
+            ;
+
+            
+        
+    
+        var marker_5e41d540275042cd8453720fac8302bb = L.marker(
+            [41.854909721, -87.658789492],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_9e6f2b553d0a478db51737d86e9a5b35 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e41d540275042cd8453720fac8302bb.setIcon(icon_9e6f2b553d0a478db51737d86e9a5b35);
+            
+    
+            var popup_2a3f4d4c57714eb58ac3c60a58274393 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_49fe9d4a7df84b838ef6426543fec60a = $(`<div id="html_49fe9d4a7df84b838ef6426543fec60a" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_2a3f4d4c57714eb58ac3c60a58274393.setContent(html_49fe9d4a7df84b838ef6426543fec60a);
+            
+
+            marker_5e41d540275042cd8453720fac8302bb.bindPopup(popup_2a3f4d4c57714eb58ac3c60a58274393)
+            ;
+
+            
+        
+    
+        var marker_13a4135811684a948f289bfda6438096 = L.marker(
+            [41.944768738, -87.730124073],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_4139a55294a14c5c806a230acd03d0d9 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_13a4135811684a948f289bfda6438096.setIcon(icon_4139a55294a14c5c806a230acd03d0d9);
+            
+    
+            var popup_82bea2cd81994ad98da60ded619b89fd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0d3b372fd4a046dbb20055aa6ff41ee5 = $(`<div id="html_0d3b372fd4a046dbb20055aa6ff41ee5" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_82bea2cd81994ad98da60ded619b89fd.setContent(html_0d3b372fd4a046dbb20055aa6ff41ee5);
+            
+
+            marker_13a4135811684a948f289bfda6438096.bindPopup(popup_82bea2cd81994ad98da60ded619b89fd)
+            ;
+
+            
+        
+    
+        var marker_c579220947ce49a299cdd910a21d9f57 = L.marker(
+            [41.678851759, -87.637119039],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_095ed99bb7d0462487b26fbf08374b17 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c579220947ce49a299cdd910a21d9f57.setIcon(icon_095ed99bb7d0462487b26fbf08374b17);
+            
+    
+            var popup_0dc48ab2fe0a4951b6770285cf786789 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bf2f786c63b241e0a69e7c559da8045b = $(`<div id="html_bf2f786c63b241e0a69e7c559da8045b" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_0dc48ab2fe0a4951b6770285cf786789.setContent(html_bf2f786c63b241e0a69e7c559da8045b);
+            
+
+            marker_c579220947ce49a299cdd910a21d9f57.bindPopup(popup_0dc48ab2fe0a4951b6770285cf786789)
+            ;
+
+            
+        
+    
+        var marker_4b17ced621014d52bb51a040c2ced699 = L.marker(
+            [41.953305818, -87.66140353],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_125f0024fa8145e7b77870429ec7df47 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4b17ced621014d52bb51a040c2ced699.setIcon(icon_125f0024fa8145e7b77870429ec7df47);
+            
+    
+            var popup_347821855fd64f4892df3d6d9ba1bbf0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b2867d2f2cc44358ac45eefb1d4b627d = $(`<div id="html_b2867d2f2cc44358ac45eefb1d4b627d" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_347821855fd64f4892df3d6d9ba1bbf0.setContent(html_b2867d2f2cc44358ac45eefb1d4b627d);
+            
+
+            marker_4b17ced621014d52bb51a040c2ced699.bindPopup(popup_347821855fd64f4892df3d6d9ba1bbf0)
+            ;
+
+            
+        
+    
+        var marker_cfadb78c01874c0787642fd0feafd8a3 = L.marker(
+            [41.880539859, -87.74171184],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_35a96ead78e346609f1e142182059696 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cfadb78c01874c0787642fd0feafd8a3.setIcon(icon_35a96ead78e346609f1e142182059696);
+            
+    
+            var popup_09f207f0df154eccb5a7bd7eebada894 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4ea349af83d3478dbc548b2fc1e5b344 = $(`<div id="html_4ea349af83d3478dbc548b2fc1e5b344" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_09f207f0df154eccb5a7bd7eebada894.setContent(html_4ea349af83d3478dbc548b2fc1e5b344);
+            
+
+            marker_cfadb78c01874c0787642fd0feafd8a3.bindPopup(popup_09f207f0df154eccb5a7bd7eebada894)
+            ;
+
+            
+        
+    
+        var marker_1535983a6d084914951762a5ecb45ea1 = L.marker(
+            [41.886544212, -87.76340479],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_2cf5c3e9059e4ee6af30f2c9d6a66e20 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1535983a6d084914951762a5ecb45ea1.setIcon(icon_2cf5c3e9059e4ee6af30f2c9d6a66e20);
+            
+    
+            var popup_cd9504f872024bffaa4f97e0b7a7fc78 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_11f79e5cd99e4482958639d950a8a180 = $(`<div id="html_11f79e5cd99e4482958639d950a8a180" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_cd9504f872024bffaa4f97e0b7a7fc78.setContent(html_11f79e5cd99e4482958639d950a8a180);
+            
+
+            marker_1535983a6d084914951762a5ecb45ea1.bindPopup(popup_cd9504f872024bffaa4f97e0b7a7fc78)
+            ;
+
+            
+        
+    
+        var marker_b6ed1809613346e4aeab4caf0367eb09 = L.marker(
+            [41.909494897, -87.756378474],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_34e2a6cfd3e54ea9a069e4d6f261f710 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b6ed1809613346e4aeab4caf0367eb09.setIcon(icon_34e2a6cfd3e54ea9a069e4d6f261f710);
+            
+    
+            var popup_95fc0f6d1fe1418789e307d2ab86bc81 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5bfe0e9ab39e4ce99071d73c4bad4774 = $(`<div id="html_5bfe0e9ab39e4ce99071d73c4bad4774" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_95fc0f6d1fe1418789e307d2ab86bc81.setContent(html_5bfe0e9ab39e4ce99071d73c4bad4774);
+            
+
+            marker_b6ed1809613346e4aeab4caf0367eb09.bindPopup(popup_95fc0f6d1fe1418789e307d2ab86bc81)
+            ;
+
+            
+        
+    
+        var marker_ab4d433a22d54748b02016f26534ea1b = L.marker(
+            [41.837624779, -87.720705777],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_a189ff75c3944864a4a3b40b13978f1c = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ab4d433a22d54748b02016f26534ea1b.setIcon(icon_a189ff75c3944864a4a3b40b13978f1c);
+            
+    
+            var popup_9be23c20acf149478c931870bfa97a60 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1105449008d146729f52918be3469e52 = $(`<div id="html_1105449008d146729f52918be3469e52" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_9be23c20acf149478c931870bfa97a60.setContent(html_1105449008d146729f52918be3469e52);
+            
+
+            marker_ab4d433a22d54748b02016f26534ea1b.bindPopup(popup_9be23c20acf149478c931870bfa97a60)
+            ;
+
+            
+        
+    
+        var marker_ff874126f6cc4737b777c2f43e577576 = L.marker(
+            [41.749998751, -87.716951479],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_55715b310a6d4266bf6554c09d9a43e9 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff874126f6cc4737b777c2f43e577576.setIcon(icon_55715b310a6d4266bf6554c09d9a43e9);
+            
+    
+            var popup_7634c84634824c4cb80a908c4e015891 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1ee59a75fdb430985e03288af629f27 = $(`<div id="html_d1ee59a75fdb430985e03288af629f27" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_7634c84634824c4cb80a908c4e015891.setContent(html_d1ee59a75fdb430985e03288af629f27);
+            
+
+            marker_ff874126f6cc4737b777c2f43e577576.bindPopup(popup_7634c84634824c4cb80a908c4e015891)
+            ;
+
+            
+        
+    
+        var marker_ff314178ba85480794cfb303e17aef60 = L.marker(
+            [41.9409992, -87.720470754],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_52ed2fd3d74c4adcae709634445cb8db = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff314178ba85480794cfb303e17aef60.setIcon(icon_52ed2fd3d74c4adcae709634445cb8db);
+            
+    
+            var popup_64e039fe562a4477b5f9e01d2eca831e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_57088e4876644dfa84fbaa737cb6f2c3 = $(`<div id="html_57088e4876644dfa84fbaa737cb6f2c3" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_64e039fe562a4477b5f9e01d2eca831e.setContent(html_57088e4876644dfa84fbaa737cb6f2c3);
+            
+
+            marker_ff314178ba85480794cfb303e17aef60.bindPopup(popup_64e039fe562a4477b5f9e01d2eca831e)
+            ;
+
+            
+        
+    
+        var marker_75334beb87f843d0be6e957a94f40201 = L.marker(
+            [41.969565982, -87.676228396],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_2de64f6922364a40a9068806aa684d6a = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75334beb87f843d0be6e957a94f40201.setIcon(icon_2de64f6922364a40a9068806aa684d6a);
+            
+    
+            var popup_028d547faed34d55bde512454fd32688 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9a043fe41a6d48f7a92981fe478742b3 = $(`<div id="html_9a043fe41a6d48f7a92981fe478742b3" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_028d547faed34d55bde512454fd32688.setContent(html_9a043fe41a6d48f7a92981fe478742b3);
+            
+
+            marker_75334beb87f843d0be6e957a94f40201.bindPopup(popup_028d547faed34d55bde512454fd32688)
+            ;
+
+            
+        
+    
+        var marker_b52f8cb1a91d4ddbb44a39f9d4d0d04c = L.marker(
+            [41.869965095, -87.713905843],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_9f63ae13c3564187b27c8fecd825b7f6 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b52f8cb1a91d4ddbb44a39f9d4d0d04c.setIcon(icon_9f63ae13c3564187b27c8fecd825b7f6);
+            
+    
+            var popup_ebb7d9c99b964d8095d3ce7125e4aa17 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eddcbb4927a241d292edb40639880472 = $(`<div id="html_eddcbb4927a241d292edb40639880472" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_ebb7d9c99b964d8095d3ce7125e4aa17.setContent(html_eddcbb4927a241d292edb40639880472);
+            
+
+            marker_b52f8cb1a91d4ddbb44a39f9d4d0d04c.bindPopup(popup_ebb7d9c99b964d8095d3ce7125e4aa17)
+            ;
+
+            
+        
+    
+        var marker_a4a1dc3d2b3c4ec2b6ef8a5c77ce7440 = L.marker(
+            [41.870028132, -87.708823855],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_794ca38a8daa40a98e5f825e8ab69dae = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a4a1dc3d2b3c4ec2b6ef8a5c77ce7440.setIcon(icon_794ca38a8daa40a98e5f825e8ab69dae);
+            
+    
+            var popup_80ab31bc33544fbd8b0067c836861817 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bca0be0280c34fe28f72e16646bc38ec = $(`<div id="html_bca0be0280c34fe28f72e16646bc38ec" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_80ab31bc33544fbd8b0067c836861817.setContent(html_bca0be0280c34fe28f72e16646bc38ec);
+            
+
+            marker_a4a1dc3d2b3c4ec2b6ef8a5c77ce7440.bindPopup(popup_80ab31bc33544fbd8b0067c836861817)
+            ;
+
+            
+        
+    
+        var marker_5d0440d8acb4456284cd99210d4ad3c8 = L.marker(
+            [41.995515781, -87.885659972],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_d1f84fb263714295a54dfcaf615ac5d1 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d0440d8acb4456284cd99210d4ad3c8.setIcon(icon_d1f84fb263714295a54dfcaf615ac5d1);
+            
+    
+            var popup_80bb4087db4e4c80b7787cbb96b29c6c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cbc55b25ddb04f5fa8b40bf7ee0dd316 = $(`<div id="html_cbc55b25ddb04f5fa8b40bf7ee0dd316" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_80bb4087db4e4c80b7787cbb96b29c6c.setContent(html_cbc55b25ddb04f5fa8b40bf7ee0dd316);
+            
+
+            marker_5d0440d8acb4456284cd99210d4ad3c8.bindPopup(popup_80bb4087db4e4c80b7787cbb96b29c6c)
+            ;
+
+            
+        
+    
+        var marker_6ea7b41d8f7f4a15ac2fb223bada7bd9 = L.marker(
+            [41.782646487, -87.63609635],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_e9ce19074f814ea2b150c77ac1f390c8 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6ea7b41d8f7f4a15ac2fb223bada7bd9.setIcon(icon_e9ce19074f814ea2b150c77ac1f390c8);
+            
+    
+            var popup_302f567a59fd4ba5b02381fdee55c16f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_91bb32e1e65045189c0b3b284da08017 = $(`<div id="html_91bb32e1e65045189c0b3b284da08017" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_302f567a59fd4ba5b02381fdee55c16f.setContent(html_91bb32e1e65045189c0b3b284da08017);
+            
+
+            marker_6ea7b41d8f7f4a15ac2fb223bada7bd9.bindPopup(popup_302f567a59fd4ba5b02381fdee55c16f)
+            ;
+
+            
+        
+    
+        var marker_e0a7e78bd77443f0b52d0290870a8a61 = L.marker(
+            [41.868219921, -87.664046556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_ec13eb499bde44c48d52927ffe4b4d90 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e0a7e78bd77443f0b52d0290870a8a61.setIcon(icon_ec13eb499bde44c48d52927ffe4b4d90);
+            
+    
+            var popup_460d88c0a2a84acf867a6976b3245e76 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_788f382945cf4d5387ccf616100b2aaf = $(`<div id="html_788f382945cf4d5387ccf616100b2aaf" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_460d88c0a2a84acf867a6976b3245e76.setContent(html_788f382945cf4d5387ccf616100b2aaf);
+            
+
+            marker_e0a7e78bd77443f0b52d0290870a8a61.bindPopup(popup_460d88c0a2a84acf867a6976b3245e76)
+            ;
+
+            
+        
+    
+        var marker_5bcb155db25c4c178c06138191f12d3a = L.marker(
+            [41.908687191, -87.70697403],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_16014ae2d9e04395ac3eab072a28cac8 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5bcb155db25c4c178c06138191f12d3a.setIcon(icon_16014ae2d9e04395ac3eab072a28cac8);
+            
+    
+            var popup_af1fed7a1c1245abb6add7a249e685ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aab92e6b9a3c4ca3af0ca7995f8a2dd3 = $(`<div id="html_aab92e6b9a3c4ca3af0ca7995f8a2dd3" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_af1fed7a1c1245abb6add7a249e685ca.setContent(html_aab92e6b9a3c4ca3af0ca7995f8a2dd3);
+            
+
+            marker_5bcb155db25c4c178c06138191f12d3a.bindPopup(popup_af1fed7a1c1245abb6add7a249e685ca)
+            ;
+
+            
+        
+    
+        var marker_a67ca3e89acd4b5796cc8b577e6cdf0d = L.marker(
+            [41.918821028, -87.634579214],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_f9323a8ccf0947a293c1b215e0290088 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a67ca3e89acd4b5796cc8b577e6cdf0d.setIcon(icon_f9323a8ccf0947a293c1b215e0290088);
+            
+    
+            var popup_136b0df90d344d90b32b3a51c96e60dd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_124e4acc4ba148169f4d3222f949e5b1 = $(`<div id="html_124e4acc4ba148169f4d3222f949e5b1" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_136b0df90d344d90b32b3a51c96e60dd.setContent(html_124e4acc4ba148169f4d3222f949e5b1);
+            
+
+            marker_a67ca3e89acd4b5796cc8b577e6cdf0d.bindPopup(popup_136b0df90d344d90b32b3a51c96e60dd)
+            ;
+
+            
+        
+    
+        var marker_9372343d06dc4fc5a72169d0b8409141 = L.marker(
+            [41.76957458, -87.721188719],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_2c12b37c8b074b2f82e0ce767d3d8cfc = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9372343d06dc4fc5a72169d0b8409141.setIcon(icon_2c12b37c8b074b2f82e0ce767d3d8cfc);
+            
+    
+            var popup_0a3e07de02a44f6fb103dc175656075a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_fc3f38d94ee744fa9f828b1f350a35e4 = $(`<div id="html_fc3f38d94ee744fa9f828b1f350a35e4" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_0a3e07de02a44f6fb103dc175656075a.setContent(html_fc3f38d94ee744fa9f828b1f350a35e4);
+            
+
+            marker_9372343d06dc4fc5a72169d0b8409141.bindPopup(popup_0a3e07de02a44f6fb103dc175656075a)
+            ;
+
+            
+        
+    
+        var marker_4fcb6fdf708e471abcbdc3f14bf93b17 = L.marker(
+            [41.680787283, -87.639060329],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_1e19615d9e6e46f48e304ffdfbce466e = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4fcb6fdf708e471abcbdc3f14bf93b17.setIcon(icon_1e19615d9e6e46f48e304ffdfbce466e);
+            
+    
+            var popup_34a549d182564fa691c6f86409b34278 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8279a95ac8ad42bebbcba2d6a21015f1 = $(`<div id="html_8279a95ac8ad42bebbcba2d6a21015f1" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_34a549d182564fa691c6f86409b34278.setContent(html_8279a95ac8ad42bebbcba2d6a21015f1);
+            
+
+            marker_4fcb6fdf708e471abcbdc3f14bf93b17.bindPopup(popup_34a549d182564fa691c6f86409b34278)
+            ;
+
+            
+        
+    
+        var marker_746b7838b3124a61a94c61106e15f7ae = L.marker(
+            [41.782170867, -87.734195004],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_cdc94d1b2c4942aaa68ae3b411b7b7a2 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_746b7838b3124a61a94c61106e15f7ae.setIcon(icon_cdc94d1b2c4942aaa68ae3b411b7b7a2);
+            
+    
+            var popup_667358d08efe4b0097bb5992689f329d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f7d3ca88cb4841868344a24a6dd0980b = $(`<div id="html_f7d3ca88cb4841868344a24a6dd0980b" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_667358d08efe4b0097bb5992689f329d.setContent(html_f7d3ca88cb4841868344a24a6dd0980b);
+            
+
+            marker_746b7838b3124a61a94c61106e15f7ae.bindPopup(popup_667358d08efe4b0097bb5992689f329d)
+            ;
+
+            
+        
+    
+        var marker_3f33c34707d848089672641d3fb17b8e = L.marker(
+            [41.729800953, -87.666870122],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_1d36aa9a74994cca9d11fbeb21e69e25 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3f33c34707d848089672641d3fb17b8e.setIcon(icon_1d36aa9a74994cca9d11fbeb21e69e25);
+            
+    
+            var popup_0bdcf89f93934d39bd4995896f5365ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7527641887ef4a22bcad3d12087332d8 = $(`<div id="html_7527641887ef4a22bcad3d12087332d8" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_0bdcf89f93934d39bd4995896f5365ca.setContent(html_7527641887ef4a22bcad3d12087332d8);
+            
+
+            marker_3f33c34707d848089672641d3fb17b8e.bindPopup(popup_0bdcf89f93934d39bd4995896f5365ca)
+            ;
+
+            
+        
+    
+        var marker_6b0e4e1e32c24c9c80469eee8193f811 = L.marker(
+            [41.882439666, -87.728169492],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_fb63891383fb430fa89fe3160369ef98 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b0e4e1e32c24c9c80469eee8193f811.setIcon(icon_fb63891383fb430fa89fe3160369ef98);
+            
+    
+            var popup_e935d6a6dd2e406f8c74f0e6b8b50009 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c30c1ae3ff98400c968cb75baa17d2f4 = $(`<div id="html_c30c1ae3ff98400c968cb75baa17d2f4" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_e935d6a6dd2e406f8c74f0e6b8b50009.setContent(html_c30c1ae3ff98400c968cb75baa17d2f4);
+            
+
+            marker_6b0e4e1e32c24c9c80469eee8193f811.bindPopup(popup_e935d6a6dd2e406f8c74f0e6b8b50009)
+            ;
+
+            
+        
+    
+        var marker_9b1995f8b9a944e8a1ece0552e697c6b = L.marker(
+            [41.783032117, -87.623779921],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_92ba4af1b4c243c6a85ee63d671e6526 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b1995f8b9a944e8a1ece0552e697c6b.setIcon(icon_92ba4af1b4c243c6a85ee63d671e6526);
+            
+    
+            var popup_4c363ebec1674abf9136b34062ee3d3c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3f2cbfce1ef64d9a8f0cbdabc3cc75a8 = $(`<div id="html_3f2cbfce1ef64d9a8f0cbdabc3cc75a8" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_4c363ebec1674abf9136b34062ee3d3c.setContent(html_3f2cbfce1ef64d9a8f0cbdabc3cc75a8);
+            
+
+            marker_9b1995f8b9a944e8a1ece0552e697c6b.bindPopup(popup_4c363ebec1674abf9136b34062ee3d3c)
+            ;
+
+            
+        
+    
+        var marker_8efa4354e6f04188a49c54578e8dfffd = L.marker(
+            [41.815952419, -87.614058525],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_01735ce3b96d431eaf001334d48012b9 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8efa4354e6f04188a49c54578e8dfffd.setIcon(icon_01735ce3b96d431eaf001334d48012b9);
+            
+    
+            var popup_df8da99e4309473ea04c6f980837ee1e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a440dc360a614789ac725eec6602f934 = $(`<div id="html_a440dc360a614789ac725eec6602f934" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_df8da99e4309473ea04c6f980837ee1e.setContent(html_a440dc360a614789ac725eec6602f934);
+            
+
+            marker_8efa4354e6f04188a49c54578e8dfffd.bindPopup(popup_df8da99e4309473ea04c6f980837ee1e)
+            ;
+
+            
+        
+    
+        var marker_4f2906c9ff614c5f903564ca1e98dbcb = L.marker(
+            [41.883578698, -87.709734846],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_85c4246e0d194634b3e58006c46cd7fc = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4f2906c9ff614c5f903564ca1e98dbcb.setIcon(icon_85c4246e0d194634b3e58006c46cd7fc);
+            
+    
+            var popup_f2ec13947e7e4d63a6fae2ad562ccf8e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_98052533b7754658bf7456824399aad4 = $(`<div id="html_98052533b7754658bf7456824399aad4" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_f2ec13947e7e4d63a6fae2ad562ccf8e.setContent(html_98052533b7754658bf7456824399aad4);
+            
+
+            marker_4f2906c9ff614c5f903564ca1e98dbcb.bindPopup(popup_f2ec13947e7e4d63a6fae2ad562ccf8e)
+            ;
+
+            
+        
+    
+        var marker_76ab9cb5634846f68de7efacce4ed10a = L.marker(
+            [41.858911907, -87.720682517],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_4f26e4e06d55489a90695bd5d60baaca = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_76ab9cb5634846f68de7efacce4ed10a.setIcon(icon_4f26e4e06d55489a90695bd5d60baaca);
+            
+    
+            var popup_8354be7d2ac848f1979ee3c78f2ac8a5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_25a23bfb73c04307abb4a9e88b2823ad = $(`<div id="html_25a23bfb73c04307abb4a9e88b2823ad" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_8354be7d2ac848f1979ee3c78f2ac8a5.setContent(html_25a23bfb73c04307abb4a9e88b2823ad);
+            
+
+            marker_76ab9cb5634846f68de7efacce4ed10a.bindPopup(popup_8354be7d2ac848f1979ee3c78f2ac8a5)
+            ;
+
+            
+        
+    
+        var marker_53d9132833d34894a8d13ab444a7c725 = L.marker(
+            [41.902141421, -87.765958681],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_6758a73ec4e441c69b3b0ed5e38cb217 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_53d9132833d34894a8d13ab444a7c725.setIcon(icon_6758a73ec4e441c69b3b0ed5e38cb217);
+            
+    
+            var popup_d7c05b624d39470c90045a3570fc1def = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4d856240a3744f939142d50a12296cd7 = $(`<div id="html_4d856240a3744f939142d50a12296cd7" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_d7c05b624d39470c90045a3570fc1def.setContent(html_4d856240a3744f939142d50a12296cd7);
+            
+
+            marker_53d9132833d34894a8d13ab444a7c725.bindPopup(popup_d7c05b624d39470c90045a3570fc1def)
+            ;
+
+            
+        
+    
+        var marker_00a6d8c820cb4650979ef1e235501380 = L.marker(
+            [41.715819258, -87.650612918],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_a56833ba119f4636afd8db65641d3991 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_00a6d8c820cb4650979ef1e235501380.setIcon(icon_a56833ba119f4636afd8db65641d3991);
+            
+    
+            var popup_ec5a6f94992b4db285421307d7bbf024 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cd125f2ae8344c3e835160c065418544 = $(`<div id="html_cd125f2ae8344c3e835160c065418544" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_ec5a6f94992b4db285421307d7bbf024.setContent(html_cd125f2ae8344c3e835160c065418544);
+            
+
+            marker_00a6d8c820cb4650979ef1e235501380.bindPopup(popup_ec5a6f94992b4db285421307d7bbf024)
+            ;
+
+            
+        
+    
+        var marker_f6fe9930130a41b5abd266025fae8b45 = L.marker(
+            [41.872868511, -87.697336894],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_e39f7c9ab33342c9bf8072a94d92762b = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f6fe9930130a41b5abd266025fae8b45.setIcon(icon_e39f7c9ab33342c9bf8072a94d92762b);
+            
+    
+            var popup_2eaa6e5421544523a44eeabedb025852 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1f78447e03804903bec8ccf67cefc435 = $(`<div id="html_1f78447e03804903bec8ccf67cefc435" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_2eaa6e5421544523a44eeabedb025852.setContent(html_1f78447e03804903bec8ccf67cefc435);
+            
+
+            marker_f6fe9930130a41b5abd266025fae8b45.bindPopup(popup_2eaa6e5421544523a44eeabedb025852)
+            ;
+
+            
+        
+    
+        var marker_75c4ebf18496492abb8bb789dd9a8def = L.marker(
+            [41.77999793, -87.629294594],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_679c25d2c4f0404aaa135ee8976f2cda = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75c4ebf18496492abb8bb789dd9a8def.setIcon(icon_679c25d2c4f0404aaa135ee8976f2cda);
+            
+    
+            var popup_c6e7f470e3f444108c23f59536ada58b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a52622d438ae47bc87bf52d3ed378339 = $(`<div id="html_a52622d438ae47bc87bf52d3ed378339" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_c6e7f470e3f444108c23f59536ada58b.setContent(html_a52622d438ae47bc87bf52d3ed378339);
+            
+
+            marker_75c4ebf18496492abb8bb789dd9a8def.bindPopup(popup_c6e7f470e3f444108c23f59536ada58b)
+            ;
+
+            
+        
+    
+        var marker_8def7ba7e4944a24b175cc0a6675f013 = L.marker(
+            [41.73042929, -87.656056147],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_1e3c93c0ff71423aa22da9310c96b3b0 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8def7ba7e4944a24b175cc0a6675f013.setIcon(icon_1e3c93c0ff71423aa22da9310c96b3b0);
+            
+    
+            var popup_a8da1a9b9d444e27b1f7141098dfe8e1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_30eccf3a429045228f44c89a1bfb4baa = $(`<div id="html_30eccf3a429045228f44c89a1bfb4baa" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_a8da1a9b9d444e27b1f7141098dfe8e1.setContent(html_30eccf3a429045228f44c89a1bfb4baa);
+            
+
+            marker_8def7ba7e4944a24b175cc0a6675f013.bindPopup(popup_a8da1a9b9d444e27b1f7141098dfe8e1)
+            ;
+
+            
+        
+    
+        var marker_7a663e3836184881b1ee21c03b811273 = L.marker(
+            [41.93003867, -87.651343203],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_dbd83b010f76497ebdd60f4d8317c3fe = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7a663e3836184881b1ee21c03b811273.setIcon(icon_dbd83b010f76497ebdd60f4d8317c3fe);
+            
+    
+            var popup_49533031d73c4fc9adaf1dfef811366d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4f7ed94dcd254e4693e61d7063a970f5 = $(`<div id="html_4f7ed94dcd254e4693e61d7063a970f5" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_49533031d73c4fc9adaf1dfef811366d.setContent(html_4f7ed94dcd254e4693e61d7063a970f5);
+            
+
+            marker_7a663e3836184881b1ee21c03b811273.bindPopup(popup_49533031d73c4fc9adaf1dfef811366d)
+            ;
+
+            
+        
+    
+        var marker_7f57d4974f574c77a79934eab2345038 = L.marker(
+            [41.878691634, -87.764807511],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_c1bdc43bba83410fb0f0a0155375b73d = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7f57d4974f574c77a79934eab2345038.setIcon(icon_c1bdc43bba83410fb0f0a0155375b73d);
+            
+    
+            var popup_23403d01fdae403aba54b657b59f66b2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b416061c0ba54ae99180cc68676c694f = $(`<div id="html_b416061c0ba54ae99180cc68676c694f" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_23403d01fdae403aba54b657b59f66b2.setContent(html_b416061c0ba54ae99180cc68676c694f);
+            
+
+            marker_7f57d4974f574c77a79934eab2345038.bindPopup(popup_23403d01fdae403aba54b657b59f66b2)
+            ;
+
+            
+        
+    
+        var marker_509bdc3ba8a94f41abe6740478370c84 = L.marker(
+            [41.887649219, -87.736747096],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_31032680d57f4c7cb087d764849e4b35 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_509bdc3ba8a94f41abe6740478370c84.setIcon(icon_31032680d57f4c7cb087d764849e4b35);
+            
+    
+            var popup_df816f82ef4b49f3b5d38e3ea0b99e2f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_833394e524d0453dae9b0a50c8ad461c = $(`<div id="html_833394e524d0453dae9b0a50c8ad461c" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_df816f82ef4b49f3b5d38e3ea0b99e2f.setContent(html_833394e524d0453dae9b0a50c8ad461c);
+            
+
+            marker_509bdc3ba8a94f41abe6740478370c84.bindPopup(popup_df816f82ef4b49f3b5d38e3ea0b99e2f)
+            ;
+
+            
+        
+    
+        var marker_aa5bce4e2d5e4845824cbc239dd9a489 = L.marker(
+            [41.929612154, -87.652534748],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_544f62cdd1b541dba297b10c9aaafac6 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa5bce4e2d5e4845824cbc239dd9a489.setIcon(icon_544f62cdd1b541dba297b10c9aaafac6);
+            
+    
+            var popup_f79e69bae67e4aa797acb4555bec9cf7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_815ab997fce64d638a1bab8ff73219b1 = $(`<div id="html_815ab997fce64d638a1bab8ff73219b1" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_f79e69bae67e4aa797acb4555bec9cf7.setContent(html_815ab997fce64d638a1bab8ff73219b1);
+            
+
+            marker_aa5bce4e2d5e4845824cbc239dd9a489.bindPopup(popup_f79e69bae67e4aa797acb4555bec9cf7)
+            ;
+
+            
+        
+    
+        var marker_5d85816b7c9c45fab0907bc5c538e252 = L.marker(
+            [41.838067642, -87.631671276],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_a17b74784c6d48a9966fedeae2fddb1e = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5d85816b7c9c45fab0907bc5c538e252.setIcon(icon_a17b74784c6d48a9966fedeae2fddb1e);
+            
+    
+            var popup_e0b240e3e1be444984bcfd3926cbbe3c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_32d5ddf0e09447fabd43530e26758fc2 = $(`<div id="html_32d5ddf0e09447fabd43530e26758fc2" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_e0b240e3e1be444984bcfd3926cbbe3c.setContent(html_32d5ddf0e09447fabd43530e26758fc2);
+            
+
+            marker_5d85816b7c9c45fab0907bc5c538e252.bindPopup(popup_e0b240e3e1be444984bcfd3926cbbe3c)
+            ;
+
+            
+        
+    
+        var marker_45c409257f1843f6baaa16fb28576d5f = L.marker(
+            [41.871644537, -87.724159124],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_5578b18727334547bebaefb3c2285253 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_45c409257f1843f6baaa16fb28576d5f.setIcon(icon_5578b18727334547bebaefb3c2285253);
+            
+    
+            var popup_3afa84c7d7e148509e8d40c9981714e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cc9bff8153a34acdbc423e5cd0827e4d = $(`<div id="html_cc9bff8153a34acdbc423e5cd0827e4d" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_3afa84c7d7e148509e8d40c9981714e9.setContent(html_cc9bff8153a34acdbc423e5cd0827e4d);
+            
+
+            marker_45c409257f1843f6baaa16fb28576d5f.bindPopup(popup_3afa84c7d7e148509e8d40c9981714e9)
+            ;
+
+            
+        
+    
+        var marker_ea744e40b0e34ba0b529d9fa93ee25e9 = L.marker(
+            [41.809347098, -87.618919216],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_77a625a17894487595ad04bd6b25d2ef);
+        
+    
+
+                var icon_5183fb3f0ed84a90b1f472e5b3d8fab5 = L.AwesomeMarkers.icon({
+                    icon: 'circle',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ea744e40b0e34ba0b529d9fa93ee25e9.setIcon(icon_5183fb3f0ed84a90b1f472e5b3d8fab5);
+            
+    
+            var popup_7aa332d1308b49fe92175d7114d1193e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_02d47c41f7ae49b9b4f7be4b38571e6a = $(`<div id="html_02d47c41f7ae49b9b4f7be4b38571e6a" style="width: 100.0%; height: 100.0%;">MOTOR VEHICLE THEFT</div>`)[0];
+                popup_7aa332d1308b49fe92175d7114d1193e.setContent(html_02d47c41f7ae49b9b4f7be4b38571e6a);
+            
+
+            marker_ea744e40b0e34ba0b529d9fa93ee25e9.bindPopup(popup_7aa332d1308b49fe92175d7114d1193e)
+            ;
+
+            
+        
+</script>
