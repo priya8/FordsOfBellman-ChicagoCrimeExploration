@@ -2,6 +2,8 @@
 <head>
    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   <link href="/static/css/font-awesome.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <style>
 
 #map {
@@ -16,7 +18,18 @@
 </style>
 </head>
 <body>
-    <div id="map" style="width: 1700px; height: 1000px"></div>
+    <div id="map" style="width: 1700px; height: 1000px"></div>   
+    <div style="position: fixed;top: 4px; right: 30px; width: 190px; height: 300px ;z-index:9999; font-size:10px;">
+        <p style="color:white;font-size: 10px;">NARCOTICS &nbsp; <i class="fa fa-map-marker fa-2x" style="color:green"></i></p>
+        <p style="color:white;font-size: 10px;">THEFT &nbsp; <i class="fa fa-map-marker fa-2x" style="color:red"></i></p>
+        <p style="color:white;font-size: 10px;">CRIMINAL DAMAGE&nbsp; <i class="fa fa-map-marker fa-2x" style="color:blue"></i></p>
+        <p style="color:white;font-size: 10px;">ROBBERY&nbsp; <i class="fa fa-map-marker fa-2x" style="color:orange"></i></p>
+   	    <p style="color:white;font-size: 10px;">MOTOR VEHICLE THEFT &nbsp; <i class="fa fa-map-marker fa-2x" style="color:pink"></i></p>
+        <p style="color:white;font-size: 10px;">BATTERY &nbsp; <i class="fa fa-map-marker fa-2x" style="color:yellow"></i></p>      
+        <p style="color:white;font-size: 10px;">BURGLARY &nbsp; <i class="fa fa-map-marker fa-2x" style="color:purple"></i></p>
+        <p style="color:white;font-size: 10px;">ASSAULT &nbsp; <i class="fa fa-map-marker fa-2x" style="color:black"></i></p>
+        <p style="color:white;font-size: 10px;">LESS PREVELANT CRIMES &nbsp; <i class="fa fa-map-marker fa-2x" style="color:white"></i></p>
+    </div>
 <script>
 var map = L.map('map').setView([41.8369, -87.6847], 11);
 
@@ -27,2960 +40,2955 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
 
 
 var circle_621 = L.circle([41.708158138, -87.568017946], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_621.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_621)
 
 var circle_622 = L.circle([41.708160345, -87.56793735], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_622.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_622)
 
 var circle_623 = L.circle([41.780929752, -87.6157883], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_623.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_623)
 
 var circle_624 = L.circle([41.955473723, -87.719729164], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_624.bindPopup("ASSAULT");
 map.addLayer(circle_624)
 
 var circle_625 = L.circle([41.887012808, -87.773309014], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_625.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_625)
 
 var circle_626 = L.circle([41.753321798, -87.595371154], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_626.bindPopup("THEFT");
 map.addLayer(circle_626)
 
 var circle_627 = L.circle([41.970326309, -87.674345174], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_627.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_627)
 
 var circle_628 = L.circle([41.695786878, -87.531808851], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_628.bindPopup("BURGLARY");
 map.addLayer(circle_628)
 
 var circle_629 = L.circle([41.876887076, -87.71561621], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_629.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_629)
 
 var circle_630 = L.circle([41.791374293, -87.6573805], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_630.bindPopup("BATTERY");
 map.addLayer(circle_630)
 
 var circle_631 = L.circle([41.880514196, -87.686564209], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_631.bindPopup("BURGLARY");
 map.addLayer(circle_631)
 
 var circle_632 = L.circle([41.954064947, -87.729374683], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_632.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_632)
 
 var circle_633 = L.circle([41.945677186, -87.77518153], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_633.bindPopup("BATTERY");
 map.addLayer(circle_633)
 
 var circle_634 = L.circle([41.720468563, -87.632450248], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_634.bindPopup("BURGLARY");
 map.addLayer(circle_634)
 
 var circle_635 = L.circle([41.878975185, -87.725855753], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_635.bindPopup("BATTERY");
 map.addLayer(circle_635)
 
 var circle_636 = L.circle([41.757448086, -87.600337717], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_636.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_636)
 
 var circle_637 = L.circle([41.869457327, -87.745746202], 200, {
-                            color: '#FF00FF',
-                            fillColor: '#FF00FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_637.bindPopup("OFFENSE INVOLVING CHILDREN");
+circle_637.bindPopup("ARSON");
 map.addLayer(circle_637)
 
+
 var circle_638 = L.circle([41.782707625, -87.638940911], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_638.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_638)
 
 var circle_639 = L.circle([41.785984635, -87.636276518], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_639.bindPopup("THEFT");
 map.addLayer(circle_639)
 
 var circle_640 = L.circle([41.702387572, -87.632221849], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_640.bindPopup("BATTERY");
 map.addLayer(circle_640)
 
 var circle_641 = L.circle([41.913347937, -87.746119026], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_641.bindPopup("BATTERY");
 map.addLayer(circle_641)
 
 var circle_642 = L.circle([41.769938203, -87.585140129], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_642.bindPopup("BATTERY");
 map.addLayer(circle_642)
 
 var circle_643 = L.circle([41.670555371, -87.622286], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_643.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_643)
 
 var circle_644 = L.circle([41.781480745, -87.710725071], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_644.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_644)
 
 var circle_645 = L.circle([41.884700253, -87.733271101], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_645.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_645)
 
 var circle_646 = L.circle([41.923499085, -87.650402342], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
 circle_646.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_646)
 
 var circle_647 = L.circle([41.810160589, -87.725970817], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_647.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_647)
 
 var circle_648 = L.circle([41.849757383, -87.733219734], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_648.bindPopup("NARCOTICS");
 map.addLayer(circle_648)
 
 var circle_649 = L.circle([41.745445701, -87.606139418], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_649.bindPopup("BATTERY");
 map.addLayer(circle_649)
 
 var circle_650 = L.circle([41.885675166, -87.745612311], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_650.bindPopup("BATTERY");
 map.addLayer(circle_650)
 
 var circle_651 = L.circle([41.752110962, -87.601714097], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_651.bindPopup("BURGLARY");
 map.addLayer(circle_651)
 
 var circle_652 = L.circle([41.962053067, -87.772038364], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_652.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_652)
 
 var circle_653 = L.circle([41.670792876, -87.634610825], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_653.bindPopup("THEFT");
 map.addLayer(circle_653)
 
 var circle_654 = L.circle([41.922486185, -87.750418954], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_654.bindPopup("BATTERY");
 map.addLayer(circle_654)
 
 var circle_655 = L.circle([41.883762379, -87.755335747], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_655.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_655)
 
 var circle_656 = L.circle([41.87025007, -87.697260048], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_656.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_656)
 
 var circle_657 = L.circle([41.750475382, -87.618282399], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_657.bindPopup("THEFT");
 map.addLayer(circle_657)
 
 var circle_658 = L.circle([41.754231743, -87.667031577], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_658.bindPopup("BATTERY");
 map.addLayer(circle_658)
 
 var circle_659 = L.circle([41.809006776, -87.710876763], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_659.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_659)
 
 var circle_660 = L.circle([41.756576546, -87.650404697], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_660.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_660)
 
 var circle_661 = L.circle([41.80581054, -87.619050204], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_661.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_661)
 
 var circle_662 = L.circle([41.745128431, -87.575724966], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_662.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_662)
 
 var circle_663 = L.circle([41.879890789, -87.72411753], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_663.bindPopup("BATTERY");
 map.addLayer(circle_663)
 
 var circle_664 = L.circle([41.894846681, -87.635810258], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_664.bindPopup("THEFT");
 map.addLayer(circle_664)
 
 var circle_665 = L.circle([41.89015683, -87.6290742], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_665.bindPopup("BATTERY");
 map.addLayer(circle_665)
 
 var circle_666 = L.circle([41.876653155, -87.745287399], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_666.bindPopup("NARCOTICS");
 map.addLayer(circle_666)
 
 var circle_667 = L.circle([41.877451805, -87.685137328], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_667.bindPopup("INTERFERENCE WITH PUBLIC OFFICER");
+circle_667.bindPopup("PROSTITUTION");
 map.addLayer(circle_667)
 
 var circle_668 = L.circle([41.772290984, -87.62690071], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_668.bindPopup("THEFT");
 map.addLayer(circle_668)
 
 var circle_669 = L.circle([41.768266066, -87.576211592], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_669.bindPopup("THEFT");
 map.addLayer(circle_669)
 
 var circle_670 = L.circle([41.866201057, -87.774008333], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_670.bindPopup("BATTERY");
 map.addLayer(circle_670)
 
 var circle_671 = L.circle([41.730113406, -87.607466379], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_671.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_671)
 
 var circle_672 = L.circle([41.872616864, -87.71050598], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_672.bindPopup("ASSAULT");
 map.addLayer(circle_672)
 
 var circle_673 = L.circle([41.945210112, -87.649273782], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_673.bindPopup("PUBLIC PEACE VIOLATION");
+circle_673.bindPopup("PROSTITUTION");
 map.addLayer(circle_673)
 
 var circle_674 = L.circle([41.885604983, -87.697908347], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_674.bindPopup("THEFT");
 map.addLayer(circle_674)
 
 var circle_675 = L.circle([41.765434107, -87.584609642], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_675.bindPopup("BURGLARY");
 map.addLayer(circle_675)
 
 var circle_676 = L.circle([41.803819445, -87.728220346], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_676.bindPopup("THEFT");
 map.addLayer(circle_676)
 
 var circle_677 = L.circle([41.884601798, -87.627174178], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_677.bindPopup("THEFT");
 map.addLayer(circle_677)
 
 var circle_678 = L.circle([41.70239533, -87.631694442], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_678.bindPopup("ROBBERY");
+circle_678.bindPopup("ARSON");
 map.addLayer(circle_678)
 
 var circle_679 = L.circle([41.929419216, -87.745255044], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_679.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_679)
 
 var circle_680 = L.circle([41.828340336, -87.685100974], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_680.bindPopup("NARCOTICS");
 map.addLayer(circle_680)
 
 var circle_681 = L.circle([41.771811562, -87.582464247], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_681.bindPopup("BATTERY");
 map.addLayer(circle_681)
 
 var circle_682 = L.circle([41.704460557, -87.602866117], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_682.bindPopup("BATTERY");
 map.addLayer(circle_682)
 
 var circle_683 = L.circle([41.782613608, -87.654432975], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_683.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_683)
 
 var circle_684 = L.circle([41.764258991, -87.651521845], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_684.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_684)
 
 var circle_685 = L.circle([41.899919485, -87.733731045], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_685.bindPopup("THEFT");
 map.addLayer(circle_685)
 
 var circle_686 = L.circle([41.861110166, -87.726388306], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_686.bindPopup("BATTERY");
 map.addLayer(circle_686)
 
 var circle_687 = L.circle([41.730113406, -87.607466379], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_687.bindPopup("BATTERY");
 map.addLayer(circle_687)
 
 var circle_688 = L.circle([41.738935729, -87.602603797], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_688.bindPopup("ASSAULT");
 map.addLayer(circle_688)
 
 var circle_689 = L.circle([41.779067221, -87.644622649], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_689.bindPopup("BATTERY");
 map.addLayer(circle_689)
 
 var circle_690 = L.circle([41.845280166, -87.702752013], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_690.bindPopup("ASSAULT");
 map.addLayer(circle_690)
 
 var circle_691 = L.circle([41.938999922, -87.766661202], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_691.bindPopup("THEFT");
 map.addLayer(circle_691)
 
 var circle_692 = L.circle([41.891659385, -87.622185982], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_692.bindPopup("BATTERY");
 map.addLayer(circle_692)
 
 var circle_693 = L.circle([41.788305749, -87.619207887], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_693.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_693)
 
 var circle_694 = L.circle([41.938954294, -87.831144141], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_694.bindPopup("THEFT");
 map.addLayer(circle_694)
 
 var circle_695 = L.circle([41.944753431, -87.832535876], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_695.bindPopup("THEFT");
 map.addLayer(circle_695)
 
 var circle_696 = L.circle([41.7374715, -87.622486323], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_696.bindPopup("THEFT");
 map.addLayer(circle_696)
 
 var circle_697 = L.circle([41.80739427, -87.685763332], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_697.bindPopup("THEFT");
 map.addLayer(circle_697)
 
 var circle_698 = L.circle([41.871374119, -87.703534672], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_698.bindPopup("NARCOTICS");
 map.addLayer(circle_698)
 
 var circle_699 = L.circle([41.756576546, -87.650404697], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_699.bindPopup("THEFT");
 map.addLayer(circle_699)
 
 var circle_700 = L.circle([41.701419302, -87.636813407], 200, {
-                            color: '#FF00FF',
-                            fillColor: '#FF00FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_700.bindPopup("OFFENSE INVOLVING CHILDREN");
+circle_700.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_700)
 
 var circle_701 = L.circle([41.941353484, -87.754907815], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_701.bindPopup("THEFT");
 map.addLayer(circle_701)
 
 var circle_702 = L.circle([41.8991532, -87.699379232], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_702.bindPopup("NARCOTICS");
 map.addLayer(circle_702)
 
 var circle_703 = L.circle([41.857281462, -87.663598991], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_703.bindPopup("BATTERY");
 map.addLayer(circle_703)
 
 var circle_704 = L.circle([41.735873488, -87.602667821], 200, {
-                            color: '#000000',
-                            fillColor: '#000000',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_704.bindPopup("HOMICIDE");
+circle_704.bindPopup("SEX");
 map.addLayer(circle_704)
 
 var circle_705 = L.circle([41.918485164, -87.778119156], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_705.bindPopup("ASSAULT");
 map.addLayer(circle_705)
 
 var circle_706 = L.circle([41.737763714, -87.582146522], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_706.bindPopup("THEFT");
 map.addLayer(circle_706)
 
 var circle_707 = L.circle([41.707348293, -87.605572782], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_707.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_707)
 
 var circle_708 = L.circle([41.879175842, -87.762287869], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_708.bindPopup("NARCOTICS");
 map.addLayer(circle_708)
 
 var circle_709 = L.circle([41.903847429, -87.708681737], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_709.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_709)
 
 var circle_710 = L.circle([41.866117564, -87.721054282], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_710.bindPopup("ASSAULT");
 map.addLayer(circle_710)
 
 var circle_711 = L.circle([41.861850751, -87.731010497], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_711.bindPopup("BURGLARY");
 map.addLayer(circle_711)
 
 var circle_712 = L.circle([41.882063253, -87.680489451], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_712.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_712)
 
 var circle_713 = L.circle([41.867279282, -87.683753199], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_713.bindPopup("WEAPONS VIOLATION");
+circle_713.bindPopup("ARSON");
 map.addLayer(circle_713)
 
 var circle_714 = L.circle([41.73114598, -87.654268113], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_714.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_714)
 
 var circle_715 = L.circle([41.876649689, -87.6864563], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_715.bindPopup("BATTERY");
 map.addLayer(circle_715)
 
 var circle_716 = L.circle([41.893151479, -87.713949981], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
 circle_716.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_716)
 
+
 var circle_717 = L.circle([41.938593873, -87.649745122], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_717.bindPopup("BURGLARY");
 map.addLayer(circle_717)
 
 var circle_718 = L.circle([41.8929017, -87.687537427], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_718.bindPopup("THEFT");
 map.addLayer(circle_718)
 
 var circle_719 = L.circle([41.915851665, -87.792698958], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_719.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_719)
 
 var circle_720 = L.circle([41.857517185, -87.6792635], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_720.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_720)
 
 var circle_721 = L.circle([41.811798901, -87.705046655], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_721.bindPopup("NARCOTICS");
 map.addLayer(circle_721)
 
 var circle_722 = L.circle([41.918111707, -87.714719101], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_722.bindPopup("BATTERY");
 map.addLayer(circle_722)
 
 var circle_723 = L.circle([41.927617766, -87.760206062], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_723.bindPopup("NARCOTICS");
 map.addLayer(circle_723)
 
 var circle_724 = L.circle([41.871262356, -87.68687778], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_724.bindPopup("WEAPONS VIOLATION");
+circle_724.bindPopup("ARSON");
 map.addLayer(circle_724)
 
 var circle_725 = L.circle([41.760587016, -87.640495279], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_725.bindPopup("ASSAULT");
 map.addLayer(circle_725)
 
 var circle_726 = L.circle([41.878736382, -87.727403934], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_726.bindPopup("NARCOTICS");
 map.addLayer(circle_726)
 
 var circle_727 = L.circle([41.780532154, -87.669237868], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_727.bindPopup("BATTERY");
 map.addLayer(circle_727)
 
-var circle_728 = L.circle([41.702754666, -87.608671347], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
-                            fillOpacity: 0.2
-                            });
-circle_728.bindPopup("ROBBERY");
-map.addLayer(circle_728)
+
 
 var circle_729 = L.circle([41.940646763, -87.644272338], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_729.bindPopup("ASSAULT");
 map.addLayer(circle_729)
 
 var circle_730 = L.circle([41.903258387, -87.667346822], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_730.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_730)
 
 var circle_731 = L.circle([41.762377312, -87.702607711], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_731.bindPopup("THEFT");
 map.addLayer(circle_731)
 
 var circle_732 = L.circle([41.700769974, -87.542417621], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_732.bindPopup("THEFT");
 map.addLayer(circle_732)
 
-var circle_733 = L.circle([41.810074604, -87.689521805], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
-                            fillOpacity: 0.2
-                            });
-circle_733.bindPopup("ROBBERY");
-map.addLayer(circle_733)
+
 
 var circle_734 = L.circle([41.771791282, -87.683584747], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_734.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_734)
 
 var circle_735 = L.circle([41.987836191, -87.705529291], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_735.bindPopup("THEFT");
 map.addLayer(circle_735)
 
 var circle_736 = L.circle([41.893229932, -87.680552044], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_736.bindPopup("BURGLARY");
 map.addLayer(circle_736)
 
 var circle_737 = L.circle([41.69183674, -87.641006532], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_737.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_737)
 
 var circle_738 = L.circle([41.851479918, -87.721612328], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_738.bindPopup("NARCOTICS");
 map.addLayer(circle_738)
 
 var circle_739 = L.circle([41.86334312, -87.652794007], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_739.bindPopup("BATTERY");
 map.addLayer(circle_739)
 
 var circle_740 = L.circle([41.879686603, -87.722874637], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_740.bindPopup("BATTERY");
 map.addLayer(circle_740)
 
 var circle_741 = L.circle([41.968216111, -87.720434254], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_741.bindPopup("PUBLIC PEACE VIOLATION");
+circle_741.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_741)
 
+
 var circle_742 = L.circle([41.788226083, -87.624067331], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_742.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_742)
 
 var circle_743 = L.circle([41.817060167, -87.699639239], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_743.bindPopup("NARCOTICS");
 map.addLayer(circle_743)
 
 var circle_744 = L.circle([41.926961451, -87.757922546], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_744.bindPopup("NARCOTICS");
 map.addLayer(circle_744)
 
 var circle_745 = L.circle([41.752902841, -87.6721431], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_745.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_745)
 
 var circle_746 = L.circle([41.760350416, -87.557128085], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_746.bindPopup("BATTERY");
 map.addLayer(circle_746)
 
 var circle_747 = L.circle([41.754390956, -87.634247274], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_747.bindPopup("BATTERY");
 map.addLayer(circle_747)
 
 var circle_748 = L.circle([41.819497882, -87.658816407], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_748.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_748)
 
 var circle_749 = L.circle([41.749616166, -87.646582961], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_749.bindPopup("THEFT");
 map.addLayer(circle_749)
 
 var circle_750 = L.circle([41.89487961, -87.6358099], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_750.bindPopup("THEFT");
 map.addLayer(circle_750)
 
 var circle_751 = L.circle([41.954064947, -87.729374683], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_751.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_751)
 
 var circle_752 = L.circle([41.82964147, -87.614598779], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_752.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_752)
 
 var circle_753 = L.circle([41.835692852, -87.658525288], 200, {
-                            color: '#FF00FF',
-                            fillColor: '#FF00FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_753.bindPopup("SEX OFFENSE");
+circle_753.bindPopup("ARSON");
 map.addLayer(circle_753)
 
+
 var circle_754 = L.circle([41.994406092, -87.678084487], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_754.bindPopup("ASSAULT");
 map.addLayer(circle_754)
 
 var circle_755 = L.circle([41.813473425, -87.637522892], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_755.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_755)
 
 var circle_756 = L.circle([41.989999578, -87.655047716], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_756.bindPopup("BATTERY");
 map.addLayer(circle_756)
 
 var circle_757 = L.circle([41.926014722, -87.759573657], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_757.bindPopup("BATTERY");
 map.addLayer(circle_757)
 
 var circle_758 = L.circle([41.755484578, -87.675854881], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_758.bindPopup("THEFT");
 map.addLayer(circle_758)
 
 var circle_759 = L.circle([41.882288317, -87.769050097], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_759.bindPopup("THEFT");
 map.addLayer(circle_759)
 
 var circle_760 = L.circle([41.925280782, -87.652830677], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_760.bindPopup("THEFT");
 map.addLayer(circle_760)
 
 var circle_761 = L.circle([41.813016007, -87.66493704], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_761.bindPopup("ASSAULT");
 map.addLayer(circle_761)
 
 var circle_762 = L.circle([41.768315008, -87.616790332], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_762.bindPopup("ASSAULT");
 map.addLayer(circle_762)
 
-var circle_763 = L.circle([41.888253772, -87.745419738], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
-                            fillOpacity: 0.2
-                            });
-circle_763.bindPopup("ROBBERY");
-map.addLayer(circle_763)
+
 
 var circle_764 = L.circle([41.857574519, -87.721021983], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_764.bindPopup("CRIMINAL DAMAGE");
+circle_764.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_764)
 
 var circle_765 = L.circle([41.966757569, -87.662751403], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_765.bindPopup("CRIMINAL TRESPASS");
+circle_765.bindPopup("PUBLIC VIOLATION");
 map.addLayer(circle_765)
 
+
 var circle_766 = L.circle([41.819893897, -87.628336806], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_766.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_766)
 
 var circle_767 = L.circle([41.90455687, -87.661771661], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_767.bindPopup("THEFT");
 map.addLayer(circle_767)
 
 var circle_768 = L.circle([41.933461722, -87.746915832], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_768.bindPopup("THEFT");
 map.addLayer(circle_768)
 
 var circle_769 = L.circle([41.852853253, -87.723386793], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_769.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_769)
 
 var circle_770 = L.circle([41.996086303, -87.706728419], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_770.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_770)
 
 var circle_771 = L.circle([41.978754803, -87.71498207], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_771.bindPopup("THEFT");
 map.addLayer(circle_771)
 
 var circle_772 = L.circle([41.654031441, -87.612994057], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_772.bindPopup("BATTERY");
 map.addLayer(circle_772)
 
 var circle_773 = L.circle([41.739986103, -87.555266527], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_773.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_773)
 
 var circle_774 = L.circle([41.746076436, -87.617869494], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_774.bindPopup("THEFT");
 map.addLayer(circle_774)
 
 var circle_775 = L.circle([41.855199346, -87.712583746], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_775.bindPopup("ROBBERY");
 map.addLayer(circle_775)
 
 var circle_776 = L.circle([41.748027747, -87.557826225], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_776.bindPopup("ROBBERY");
 map.addLayer(circle_776)
 
 var circle_777 = L.circle([41.968433284, -87.720505715], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_777.bindPopup("BATTERY");
 map.addLayer(circle_777)
 
 var circle_778 = L.circle([41.772784148, -87.67146605], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_778.bindPopup("ASSAULT");
 map.addLayer(circle_778)
 
 var circle_779 = L.circle([41.768679267, -87.643117184], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_779.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_779)
 
 var circle_780 = L.circle([41.707733402, -87.624597538], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_780.bindPopup("WEAPONS VIOLATION");
+circle_780.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_780)
 
 var circle_781 = L.circle([41.87680637, -87.679716778], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_781.bindPopup("WEAPONS VIOLATION");
+circle_781.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_781)
 
+
+
+
 var circle_782 = L.circle([41.915247045, -87.702170293], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_782.bindPopup("BATTERY");
 map.addLayer(circle_782)
 
 var circle_783 = L.circle([41.909364254, -87.775479606], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_783.bindPopup("BATTERY");
 map.addLayer(circle_783)
 
 var circle_784 = L.circle([41.764236899, -87.574880747], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_784.bindPopup("THEFT");
 map.addLayer(circle_784)
 
 var circle_785 = L.circle([41.901162519, -87.761691621], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_785.bindPopup("ASSAULT");
 map.addLayer(circle_785)
 
 var circle_786 = L.circle([41.68795639, -87.622153], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_786.bindPopup("BATTERY");
 map.addLayer(circle_786)
 
 var circle_787 = L.circle([41.89903012, -87.732112146], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_787.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_787)
 
 var circle_788 = L.circle([41.710805286, -87.537551775], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_788.bindPopup("ASSAULT");
 map.addLayer(circle_788)
 
 var circle_789 = L.circle([41.79916042, -87.661222868], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_789.bindPopup("NARCOTICS");
 map.addLayer(circle_789)
 
 var circle_790 = L.circle([41.875159254, -87.742947461], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_790.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_790)
 
 var circle_791 = L.circle([41.695981267, -87.612097744], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_791.bindPopup("THEFT");
 map.addLayer(circle_791)
 
 var circle_792 = L.circle([41.881079536, -87.706362408], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_792.bindPopup("BATTERY");
 map.addLayer(circle_792)
 
 var circle_793 = L.circle([41.709162676, -87.619194535], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_793.bindPopup("ROBBERY");
 map.addLayer(circle_793)
 
 var circle_794 = L.circle([41.764623893, -87.609342802], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_794.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_794)
 
 var circle_795 = L.circle([41.933509448, -87.647546549], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_795.bindPopup("THEFT");
 map.addLayer(circle_795)
 
 var circle_796 = L.circle([41.800839202, -87.594096354], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_796.bindPopup("ASSAULT");
 map.addLayer(circle_796)
 
 var circle_797 = L.circle([41.75511864, -87.605157979], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_797.bindPopup("THEFT");
 map.addLayer(circle_797)
 
 var circle_798 = L.circle([41.876650218, -87.764869667], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_798.bindPopup("THEFT");
 map.addLayer(circle_798)
 
 var circle_799 = L.circle([41.756605046, -87.670738041], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_799.bindPopup("NARCOTICS");
 map.addLayer(circle_799)
 
 var circle_800 = L.circle([41.760309977, -87.558862231], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_800.bindPopup("NARCOTICS");
 map.addLayer(circle_800)
 
 var circle_801 = L.circle([41.842480239, -87.712178226], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_801.bindPopup("BATTERY");
 map.addLayer(circle_801)
 
 var circle_802 = L.circle([41.759609933, -87.644127017], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_802.bindPopup("NARCOTICS");
 map.addLayer(circle_802)
 
 var circle_803 = L.circle([41.858768008, -87.724068436], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_803.bindPopup("NARCOTICS");
 map.addLayer(circle_803)
 
 var circle_804 = L.circle([41.924200834, -87.756297445], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_804.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_804)
 
 var circle_805 = L.circle([41.74897836, -87.690008029], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_805.bindPopup("BATTERY");
 map.addLayer(circle_805)
 
 var circle_806 = L.circle([41.864869477, -87.709428414], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_806.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_806)
 
 var circle_807 = L.circle([41.919128765, -87.756152077], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_807.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_807)
 
 var circle_808 = L.circle([41.885584343, -87.726046543], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_808.bindPopup("THEFT");
 map.addLayer(circle_808)
 
 var circle_809 = L.circle([41.725203569, -87.623680247], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_809.bindPopup("ROBBERY");
 map.addLayer(circle_809)
 
 var circle_810 = L.circle([41.888512979, -87.713814834], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_810.bindPopup("BATTERY");
 map.addLayer(circle_810)
 
 var circle_811 = L.circle([41.761884184, -87.597109386], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_811.bindPopup("WEAPONS VIOLATION");
+circle_811.bindPopup("ARSON");
 map.addLayer(circle_811)
 
 var circle_812 = L.circle([41.905828181, -87.687249207], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_812.bindPopup("BATTERY");
 map.addLayer(circle_812)
 
 var circle_813 = L.circle([41.912621385, -87.782813866], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_813.bindPopup("THEFT");
 map.addLayer(circle_813)
 
 var circle_814 = L.circle([41.777475615, -87.754040047], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_814.bindPopup("ASSAULT");
 map.addLayer(circle_814)
 
 var circle_815 = L.circle([41.969410696, -87.715984398], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_815.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_815)
 
 var circle_816 = L.circle([41.743322508, -87.631886632], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_816.bindPopup("THEFT");
 map.addLayer(circle_816)
 
 var circle_817 = L.circle([41.748265635, -87.662318342], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#006400',
+                            fillColor: '#006400',
                             fillOpacity: 0.2
                             });
 circle_817.bindPopup("DECEPTIVE PRACTICE");
 map.addLayer(circle_817)
 
 var circle_818 = L.circle([41.944034737, -87.809237129], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_818.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_818)
 
 var circle_819 = L.circle([41.697472635, -87.52564364], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_819.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_819)
 
 var circle_820 = L.circle([41.953815197, -87.729369688], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_820.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_820)
 
 var circle_821 = L.circle([41.829656655, -87.629011235], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_821.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_821)
 
 var circle_822 = L.circle([41.802231941, -87.673169285], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_822.bindPopup("THEFT");
 map.addLayer(circle_822)
 
 var circle_823 = L.circle([41.789704495, -87.605085715], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_823.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_823)
 
 var circle_824 = L.circle([41.856938762, -87.669802489], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_824.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_824)
 
 var circle_825 = L.circle([41.764363281, -87.696969071], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_825.bindPopup("BURGLARY");
 map.addLayer(circle_825)
 
 var circle_826 = L.circle([41.730856872, -87.56112118], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_826.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_826)
 
 var circle_827 = L.circle([41.880258426, -87.728252499], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_827.bindPopup("NARCOTICS");
 map.addLayer(circle_827)
 
 var circle_828 = L.circle([41.894265147, -87.758175716], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_828.bindPopup("NARCOTICS");
 map.addLayer(circle_828)
 
 var circle_829 = L.circle([41.871724479, -87.709402144], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_829.bindPopup("NARCOTICS");
 map.addLayer(circle_829)
 
 var circle_830 = L.circle([41.771366118, -87.649573322], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_830.bindPopup("BATTERY");
 map.addLayer(circle_830)
 
 var circle_831 = L.circle([41.882401217, -87.730773464], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_831.bindPopup("BATTERY");
 map.addLayer(circle_831)
 
 var circle_832 = L.circle([41.861499431, -87.719082945], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_832.bindPopup("BATTERY");
 map.addLayer(circle_832)
 
 var circle_833 = L.circle([41.676132391, -87.619713537], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_833.bindPopup("BATTERY");
 map.addLayer(circle_833)
 
 var circle_834 = L.circle([41.876200328, -87.732557495], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_834.bindPopup("NARCOTICS");
 map.addLayer(circle_834)
 
 var circle_835 = L.circle([41.771152493, -87.591266337], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_835.bindPopup("ASSAULT");
 map.addLayer(circle_835)
 
 var circle_836 = L.circle([41.743375383, -87.562605467], 200, {
-                            color: '#000000',
-                            fillColor: '#000000',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_836.bindPopup("HOMICIDE");
+circle_836.bindPopup("ARSON");
 map.addLayer(circle_836)
 
 var circle_837 = L.circle([41.90453732, -87.729404543], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_837.bindPopup("GAMBLING");
+circle_837.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_837)
 
+
 var circle_838 = L.circle([41.878652794, -87.734488036], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_838.bindPopup("BATTERY");
 map.addLayer(circle_838)
 
 var circle_839 = L.circle([41.983674442, -87.714849874], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_839.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_839)
 
 var circle_840 = L.circle([41.871736819, -87.708138989], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_840.bindPopup("NARCOTICS");
 map.addLayer(circle_840)
 
 var circle_841 = L.circle([41.979003256, -87.669544497], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_841.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_841)
 
 var circle_842 = L.circle([41.939153533, -87.729500707], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_842.bindPopup("BATTERY");
 map.addLayer(circle_842)
 
 var circle_843 = L.circle([41.935308781, -87.651084919], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_843.bindPopup("ROBBERY");
 map.addLayer(circle_843)
 
 var circle_844 = L.circle([41.753087173, -87.556856447], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_844.bindPopup("THEFT");
 map.addLayer(circle_844)
 
 var circle_845 = L.circle([41.856222572, -87.722235207], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_845.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_845)
 
 var circle_846 = L.circle([41.748265635, -87.662318342], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_846.bindPopup("WEAPONS VIOLATION");
+circle_846.bindPopup("ARSON");
 map.addLayer(circle_846)
 
+
 var circle_847 = L.circle([42.012940898, -87.670060146], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_847.bindPopup("NARCOTICS");
 map.addLayer(circle_847)
 
 var circle_848 = L.circle([41.861816106, -87.651202283], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_848.bindPopup("ASSAULT");
 map.addLayer(circle_848)
 
 var circle_849 = L.circle([41.814880706, -87.619987578], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_849.bindPopup("WEAPONS VIOLATION");
+circle_849.bindPopup("OFFENSE INVOLVING MINOR");
 map.addLayer(circle_849)
 
 var circle_850 = L.circle([41.966808859, -87.649119983], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_850.bindPopup("BATTERY");
 map.addLayer(circle_850)
 
 var circle_851 = L.circle([41.825634268, -87.606223312], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_851.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_851)
 
 var circle_852 = L.circle([41.884267528, -87.751030889], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_852.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_852)
 
 var circle_853 = L.circle([41.778303156, -87.684981864], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_853.bindPopup("GAMBLING");
+circle_853.bindPopup("SEX");
 map.addLayer(circle_853)
 
 var circle_854 = L.circle([41.773881301, -87.665677115], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_854.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_854)
 
 var circle_855 = L.circle([41.764480123, -87.630831493], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_855.bindPopup("BATTERY");
 map.addLayer(circle_855)
 
 var circle_856 = L.circle([41.735801328, -87.654900553], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_856.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_856)
 
 var circle_857 = L.circle([41.866251651, -87.770321901], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_857.bindPopup("THEFT");
 map.addLayer(circle_857)
 
 var circle_858 = L.circle([41.912320074, -87.63459869], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_858.bindPopup("THEFT");
 map.addLayer(circle_858)
 
 var circle_859 = L.circle([41.699446355, -87.680318489], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_859.bindPopup("ASSAULT");
 map.addLayer(circle_859)
 
 var circle_860 = L.circle([41.72657333, -87.547808674], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_860.bindPopup("ROBBERY");
 map.addLayer(circle_860)
 
 var circle_861 = L.circle([41.740820541, -87.552863775], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_861.bindPopup("BATTERY");
 map.addLayer(circle_861)
 
 var circle_862 = L.circle([41.784879716, -87.654783067], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_862.bindPopup("ASSAULT");
 map.addLayer(circle_862)
 
 var circle_863 = L.circle([41.73114598, -87.654268113], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_863.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_863)
 
 var circle_864 = L.circle([41.908167969, -87.727845737], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_864.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_864)
 
 var circle_865 = L.circle([41.906964616, -87.680996249], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_865.bindPopup("THEFT");
 map.addLayer(circle_865)
 
 var circle_866 = L.circle([41.885805124, -87.729926202], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_866.bindPopup("THEFT");
 map.addLayer(circle_866)
 
 var circle_867 = L.circle([42.008039273, -87.66476852], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#006400',
+                            fillColor: '#006400',
                             fillOpacity: 0.2
                             });
 circle_867.bindPopup("DECEPTIVE PRACTICE");
 map.addLayer(circle_867)
 
 var circle_868 = L.circle([41.895825378, -87.675636861], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_868.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_868)
 
 var circle_869 = L.circle([41.690290915, -87.657941849], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_869.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_869)
 
 var circle_870 = L.circle([41.783720994, -87.587399853], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_870.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_870)
 
 var circle_871 = L.circle([41.903657389, -87.728545903], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_871.bindPopup("BURGLARY");
 map.addLayer(circle_871)
 
 var circle_872 = L.circle([41.777520037, -87.682379393], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_872.bindPopup("NARCOTICS");
 map.addLayer(circle_872)
 
 var circle_873 = L.circle([41.89025634, -87.763235904], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_873.bindPopup("ASSAULT");
 map.addLayer(circle_873)
 
 var circle_874 = L.circle([41.804332351, -87.666222991], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_874.bindPopup("ASSAULT");
 map.addLayer(circle_874)
 
 var circle_875 = L.circle([41.789050031, -87.691374983], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_875.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_875)
 
 var circle_876 = L.circle([41.855816985, -87.729606175], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_876.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_876)
 
 var circle_877 = L.circle([41.855816985, -87.729606175], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_877.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_877)
 
 var circle_878 = L.circle([41.861920066, -87.710562075], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_878.bindPopup("NARCOTICS");
 map.addLayer(circle_878)
 
 var circle_879 = L.circle([41.757700709, -87.663755744], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_879.bindPopup("BATTERY");
 map.addLayer(circle_879)
 
 var circle_880 = L.circle([41.75681391, -87.673173154], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_880.bindPopup("BATTERY");
 map.addLayer(circle_880)
 
 var circle_881 = L.circle([41.831059591, -87.616248769], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_881.bindPopup("PUBLIC PEACE VIOLATION");
+circle_881.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_881)
 
 var circle_882 = L.circle([41.881350433, -87.766396026], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_882.bindPopup("BATTERY");
 map.addLayer(circle_882)
 
 var circle_883 = L.circle([41.752835029, -87.572493598], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_883.bindPopup("ASSAULT");
 map.addLayer(circle_883)
 
 var circle_884 = L.circle([42.018053152, -87.682497005], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_884.bindPopup("THEFT");
 map.addLayer(circle_884)
 
 var circle_885 = L.circle([41.717555296, -87.535428322], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_885.bindPopup("WEAPONS VIOLATION");
+circle_885.bindPopup("PROSTITUTION");
 map.addLayer(circle_885)
 
 var circle_886 = L.circle([41.899121331, -87.631164922], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_886.bindPopup("BATTERY");
 map.addLayer(circle_886)
 
 var circle_887 = L.circle([42.021260774, -87.670452111], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_887.bindPopup("ASSAULT");
 map.addLayer(circle_887)
 
 var circle_888 = L.circle([41.920350726, -87.670887608], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_888.bindPopup("THEFT");
 map.addLayer(circle_888)
 
 var circle_889 = L.circle([41.877472025, -87.702068449], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_889.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_889)
 
 var circle_890 = L.circle([41.763945391, -87.649087636], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_890.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_890)
 
 var circle_891 = L.circle([41.896037061, -87.676181967], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_891.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_891)
 
 var circle_892 = L.circle([41.779912099, -87.641365208], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_892.bindPopup("THEFT");
 map.addLayer(circle_892)
 
 var circle_893 = L.circle([41.882456854, -87.706308548], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_893.bindPopup("INTERFERENCE WITH PUBLIC OFFICER");
+circle_893.bindPopup("PROSTITUTION");
 map.addLayer(circle_893)
 
 var circle_894 = L.circle([41.878377167, -87.755138253], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_894.bindPopup("ROBBERY");
 map.addLayer(circle_894)
 
 var circle_895 = L.circle([41.855125213, -87.65391259], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_895.bindPopup("THEFT");
 map.addLayer(circle_895)
 
 var circle_896 = L.circle([41.96529288, -87.657258649], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_896.bindPopup("BATTERY");
 map.addLayer(circle_896)
 
 var circle_897 = L.circle([41.807249923, -87.726163367], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_897.bindPopup("BATTERY");
 map.addLayer(circle_897)
 
 var circle_898 = L.circle([41.816907795, -87.60757298], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_898.bindPopup("ASSAULT");
 map.addLayer(circle_898)
 
 var circle_899 = L.circle([41.933088928, -87.722262774], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#006400',
+                            fillColor: '#006400',
                             fillOpacity: 0.2
                             });
 circle_899.bindPopup("DECEPTIVE PRACTICE");
 map.addLayer(circle_899)
 
 var circle_900 = L.circle([41.764416195, -87.683380585], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_900.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_900)
 
 var circle_901 = L.circle([41.827741553, -87.620622666], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_901.bindPopup("BATTERY");
 map.addLayer(circle_901)
 
 var circle_902 = L.circle([41.859762705, -87.651084611], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_902.bindPopup("THEFT");
 map.addLayer(circle_902)
 
 var circle_903 = L.circle([41.776598926, -87.605699605], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_903.bindPopup("BATTERY");
 map.addLayer(circle_903)
 
 var circle_904 = L.circle([41.925403593, -87.635797204], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_904.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_904)
 
 var circle_905 = L.circle([41.770167614, -87.728492722], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_905.bindPopup("THEFT");
 map.addLayer(circle_905)
 
 var circle_906 = L.circle([41.927308618, -87.704296718], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_906.bindPopup("THEFT");
 map.addLayer(circle_906)
 
 var circle_907 = L.circle([41.896128014, -87.723511458], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_907.bindPopup("THEFT");
 map.addLayer(circle_907)
 
 var circle_908 = L.circle([41.94673247, -87.68026015], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_908.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_908)
 
 var circle_909 = L.circle([41.882357464, -87.62769464], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_909.bindPopup("THEFT");
 map.addLayer(circle_909)
 
 var circle_910 = L.circle([41.697202882, -87.62718479], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_910.bindPopup("THEFT");
 map.addLayer(circle_910)
 
 var circle_911 = L.circle([41.955377515, -87.673675681], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_911.bindPopup("THEFT");
 map.addLayer(circle_911)
 
 var circle_912 = L.circle([41.851249624, -87.684157655], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_912.bindPopup("THEFT");
 map.addLayer(circle_912)
 
 var circle_913 = L.circle([41.753783964, -87.556411929], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_913.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_913)
 
 var circle_914 = L.circle([41.878566767, -87.756278539], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_914.bindPopup("NARCOTICS");
 map.addLayer(circle_914)
 
 var circle_915 = L.circle([41.76381753, -87.561360203], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_915.bindPopup("BATTERY");
 map.addLayer(circle_915)
 
 var circle_916 = L.circle([41.779650214, -87.61304547], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_916.bindPopup("GAMBLING");
+circle_916.bindPopup("SEX");
 map.addLayer(circle_916)
 
 var circle_917 = L.circle([41.963088117, -87.717019804], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_917.bindPopup("BATTERY");
 map.addLayer(circle_917)
 
 var circle_918 = L.circle([41.903562274, -87.733957777], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_918.bindPopup("BATTERY");
 map.addLayer(circle_918)
 
 var circle_919 = L.circle([41.893632038, -87.631030388], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_919.bindPopup("THEFT");
 map.addLayer(circle_919)
 
 var circle_920 = L.circle([41.862525534, -87.732523996], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_920.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_920)
 
 var circle_921 = L.circle([41.685940288, -87.678661176], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_921.bindPopup("BATTERY");
 map.addLayer(circle_921)
 
 var circle_922 = L.circle([41.803334534, -87.658424802], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_922.bindPopup("BURGLARY");
 map.addLayer(circle_922)
 
 var circle_923 = L.circle([41.880320926, -87.750416758], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_923.bindPopup("THEFT");
 map.addLayer(circle_923)
 
 var circle_924 = L.circle([41.858160771, -87.668519748], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_924.bindPopup("BATTERY");
 map.addLayer(circle_924)
 
 var circle_925 = L.circle([41.689495673, -87.697000848], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_925.bindPopup("ASSAULT");
 map.addLayer(circle_925)
 
 var circle_926 = L.circle([41.748401116, -87.702209505], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_926.bindPopup("BATTERY");
 map.addLayer(circle_926)
 
 var circle_927 = L.circle([41.825634268, -87.606223312], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_927.bindPopup("ASSAULT");
 map.addLayer(circle_927)
 
 var circle_928 = L.circle([41.776714949, -87.61541734], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_928.bindPopup("BATTERY");
 map.addLayer(circle_928)
 
 var circle_929 = L.circle([41.733928064, -87.658349538], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_929.bindPopup("INTERFERENCE WITH PUBLIC OFFICER");
+circle_929.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_929)
 
 var circle_930 = L.circle([41.884632425, -87.636681547], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_930.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_930)
 
 var circle_931 = L.circle([41.73134698, -87.638768954], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_931.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_931)
 
 var circle_932 = L.circle([41.685047685, -87.630228191], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_932.bindPopup("PUBLIC PEACE VIOLATION");
+circle_932.bindPopup("SEX");
 map.addLayer(circle_932)
 
 var circle_933 = L.circle([41.889866562, -87.757715694], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_933.bindPopup("BATTERY");
 map.addLayer(circle_933)
 
 var circle_934 = L.circle([41.752288363, -87.648295255], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_934.bindPopup("BURGLARY");
 map.addLayer(circle_934)
 
 var circle_935 = L.circle([41.950476802, -87.68971002], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_935.bindPopup("THEFT");
 map.addLayer(circle_935)
 
 var circle_936 = L.circle([41.772258719, -87.652001687], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_936.bindPopup("BATTERY");
 map.addLayer(circle_936)
 
 var circle_937 = L.circle([41.910877535, -87.772909421], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#003366',
+                            fillColor: '#003366',
                             fillOpacity: 0.2
                             });
 circle_937.bindPopup("OTHER OFFENSE");
 map.addLayer(circle_937)
 
 var circle_938 = L.circle([41.700628834, -87.614953327], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_938.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_938)
 
 var circle_939 = L.circle([41.970173254, -87.76259005], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_939.bindPopup("NARCOTICS");
 map.addLayer(circle_939)
 
 var circle_940 = L.circle([41.893479755, -87.712742111], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_940.bindPopup("WEAPONS VIOLATION");
+circle_940.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_940)
 
 var circle_941 = L.circle([41.756162658, -87.655122294], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_941.bindPopup("BATTERY");
 map.addLayer(circle_941)
 
 var circle_942 = L.circle([41.878055492, -87.761596495], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_942.bindPopup("THEFT");
 map.addLayer(circle_942)
 
 var circle_943 = L.circle([41.889930984, -87.756881422], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_943.bindPopup("BATTERY");
 map.addLayer(circle_943)
 
 var circle_944 = L.circle([41.889930984, -87.756881422], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_944.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_944)
 
 var circle_945 = L.circle([41.739289521, -87.665705781], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_945.bindPopup("BATTERY");
 map.addLayer(circle_945)
 
 var circle_946 = L.circle([41.894178581, -87.716129106], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_946.bindPopup("ASSAULT");
 map.addLayer(circle_946)
 
 var circle_947 = L.circle([41.677761963, -87.65357403], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_947.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_947)
 
 var circle_948 = L.circle([41.961196995, -87.729866202], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_948.bindPopup("BATTERY");
 map.addLayer(circle_948)
 
 var circle_949 = L.circle([41.954325823, -87.645047775], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_949.bindPopup("BATTERY");
 map.addLayer(circle_949)
 
 var circle_950 = L.circle([41.856066842, -87.717740059], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_950.bindPopup("ROBBERY");
 map.addLayer(circle_950)
 
 var circle_951 = L.circle([41.710628568, -87.564399474], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_951.bindPopup("CRIMINAL TRESPASS");
+circle_951.bindPopup("PUBLIC VIOLATION");
 map.addLayer(circle_951)
 
 var circle_952 = L.circle([41.826951362, -87.632691591], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_952.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_952)
 
 var circle_953 = L.circle([41.672682227, -87.637983466], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_953.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_953)
 
 var circle_954 = L.circle([41.710628568, -87.564399474], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_954.bindPopup("CRIMINAL TRESPASS");
+circle_954.bindPopup("OFFENSE INVOLVING MINOR");
 map.addLayer(circle_954)
 
 var circle_955 = L.circle([41.895825378, -87.675636861], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_955.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_955)
 
 var circle_956 = L.circle([41.973080161, -87.708461715], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_956.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_956)
 
 var circle_957 = L.circle([41.674736569, -87.640516307], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
 circle_957.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_957)
 
 var circle_958 = L.circle([41.817380096, -87.686143316], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_958.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_958)
 
 var circle_959 = L.circle([41.921281142, -87.677602231], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#006400',
+                            fillColor: '#006400',
                             fillOpacity: 0.2
                             });
 circle_959.bindPopup("DECEPTIVE PRACTICE");
 map.addLayer(circle_959)
 
 var circle_960 = L.circle([41.762855306, -87.562738926], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_960.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_960)
 
 var circle_961 = L.circle([41.811592936, -87.703016498], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_961.bindPopup("BATTERY");
 map.addLayer(circle_961)
 
 var circle_962 = L.circle([41.859255461, -87.706538925], 200, {
-                            color: '#FFFB00',
-                            fillColor: '#FFFB00',
+                            color: '#008000',
+                            fillColor: '#008000',
                             fillOpacity: 0.2
                             });
 circle_962.bindPopup("NARCOTICS");
 map.addLayer(circle_962)
 
 var circle_963 = L.circle([41.881995087, -87.639835236], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_963.bindPopup("THEFT");
 map.addLayer(circle_963)
 
 var circle_964 = L.circle([41.699978988, -87.62343401], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_964.bindPopup("BATTERY");
 map.addLayer(circle_964)
 
 var circle_965 = L.circle([41.936363248, -87.762887934], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_965.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_965)
 
 var circle_966 = L.circle([41.779665183, -87.5865926], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_966.bindPopup("WEAPONS VIOLATION");
+circle_966.bindPopup("ARSON");
 map.addLayer(circle_966)
 
 var circle_967 = L.circle([41.843989002, -87.627070436], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_967.bindPopup("CRIMINAL TRESPASS");
+circle_967.bindPopup("SEX");
 map.addLayer(circle_967)
 
+
+
 var circle_968 = L.circle([41.772258358, -87.673568369], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_968.bindPopup("THEFT");
 map.addLayer(circle_968)
 
 var circle_969 = L.circle([41.890161395, -87.628923571], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_969.bindPopup("THEFT");
 map.addLayer(circle_969)
 
 var circle_970 = L.circle([41.717169907, -87.569995166], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFF00',
+                            fillColor: '#FFFF00',
                             fillOpacity: 0.2
                             });
 circle_970.bindPopup("BATTERY");
 map.addLayer(circle_970)
 
 var circle_971 = L.circle([41.84789428, -87.702539159], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_971.bindPopup("ASSAULT");
 map.addLayer(circle_971)
 
 var circle_972 = L.circle([41.789983677, -87.61895458], 200, {
-                            color: '#0033FF',
-                            fillColor: '#0033FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_972.bindPopup("PUBLIC PEACE VIOLATION");
+circle_972.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_972)
 
+
 var circle_973 = L.circle([41.737933543, -87.643816563], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_973.bindPopup("THEFT");
 map.addLayer(circle_973)
 
 var circle_974 = L.circle([41.909766043, -87.743312011], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_974.bindPopup("THEFT");
 map.addLayer(circle_974)
 
 var circle_975 = L.circle([41.794694622, -87.629463824], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_975.bindPopup("THEFT");
 map.addLayer(circle_975)
 
 var circle_976 = L.circle([41.883180585, -87.749906026], 200, {
-                            color: '#FF00FF',
-                            fillColor: '#FF00FF',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_976.bindPopup("OFFENSE INVOLVING CHILDREN");
+circle_976.bindPopup("ARSON");
 map.addLayer(circle_976)
 
 var circle_977 = L.circle([41.924008586, -87.771203415], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#800080',
+                            fillColor: '#800080',
                             fillOpacity: 0.2
                             });
 circle_977.bindPopup("BURGLARY");
 map.addLayer(circle_977)
 
 var circle_978 = L.circle([41.81062289, -87.601866649], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_978.bindPopup("ROBBERY");
 map.addLayer(circle_978)
 
 var circle_979 = L.circle([41.920559979, -87.73657659], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_979.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_979)
 
 var circle_980 = L.circle([41.779971202, -87.637973181], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_980.bindPopup("THEFT");
 map.addLayer(circle_980)
 
 var circle_981 = L.circle([41.963264568, -87.656268955], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_981.bindPopup("THEFT");
 map.addLayer(circle_981)
 
 var circle_982 = L.circle([41.866475291, -87.666528202], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#0000FF',
+                            fillColor: '#0000FF',
                             fillOpacity: 0.2
                             });
 circle_982.bindPopup("CRIMINAL DAMAGE");
 map.addLayer(circle_982)
 
 var circle_983 = L.circle([41.893227519, -87.639423586], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFC0CB',
+                            fillColor: '#FFC0CB',
                             fillOpacity: 0.2
                             });
 circle_983.bindPopup("MOTOR VEHICLE THEFT");
 map.addLayer(circle_983)
 
 var circle_984 = L.circle([41.736152826, -87.627153985], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_984.bindPopup("THEFT");
 map.addLayer(circle_984)
 
 var circle_985 = L.circle([41.807709536, -87.597307522], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_985.bindPopup("ROBBERY");
 map.addLayer(circle_985)
 
 var circle_986 = L.circle([41.946243275, -87.694273944], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FFA500',
+                            fillColor: '#FFA500',
                             fillOpacity: 0.2
                             });
 circle_986.bindPopup("ROBBERY");
 map.addLayer(circle_986)
 
 var circle_987 = L.circle([41.661362772, -87.634522477], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_987.bindPopup("INTIMIDATION");
+circle_987.bindPopup("SEX");
 map.addLayer(circle_987)
 
 var circle_988 = L.circle([41.799955016, -87.676665789], 200, {
-                            color: '#FA0707',
-                            fillColor: '#FA0707',
+                            color: '#000000',
+                            fillColor: '#000000',
                             fillOpacity: 0.2
                             });
 circle_988.bindPopup("ASSAULT");
 map.addLayer(circle_988)
 
 var circle_989 = L.circle([41.89490424, -87.712783415], 200, {
-                            color: '#000000',
-                            fillColor: '#000000',
+                            color: '#FFFFFF',
+                            fillColor: '#FFFFFF',
                             fillOpacity: 0.2
                             });
-circle_989.bindPopup("HOMICIDE");
+circle_989.bindPopup("CRIMINAL TRESPASS");
 map.addLayer(circle_989)
 
 var circle_990 = L.circle([41.801188836, -87.703921672], 200, {
-                            color: '#07FA18',
-                            fillColor: '#07FA18',
+                            color: '#FF0000',
+                            fillColor: '#FF0000',
                             fillOpacity: 0.2
                             });
 circle_990.bindPopup("THEFT");

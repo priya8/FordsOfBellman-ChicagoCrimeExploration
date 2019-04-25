@@ -138,7 +138,7 @@ a:hover {
 #menu li {
   position: relative;
   margin: 0;
-  font-size: 12px;
+  font-size: 18px !important;
   padding: 0;
 }
 #menu li ul {
@@ -152,7 +152,7 @@ a:hover {
     color: #FFFFFF;
     white-space: nowrap;
     z-index: 2;
-    font-size: 1.12em;
+    font-size: 18px !important;
         text-align: center;
     font-family: 'Carrois Gothic', sans-serif;
 }

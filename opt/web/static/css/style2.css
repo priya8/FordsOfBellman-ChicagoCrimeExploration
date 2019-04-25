@@ -2,13 +2,9 @@ body {
 	background: #000000;
 }
 
-/* Always set the map height explicitly to define the size of the div
-* element that contains the map. */
 #map {
 	height: 600px;
 }
-
-/* Button styles */
 
 .btn, .btn-large {
 	background-color: #B6ACD1;
@@ -24,30 +20,26 @@ body {
 	background-color: #836EAA;
 }
 
-/*button, input, optgroup, select,*/ 
 
 input {
 	color: #D8D6D6;
 }
 
-/*animations*/
 #animate {  
-  /*!* This section calls the slideInFromLeft animation we defined above *!*/
+  
   animation: 
     1s ease-out 0s 1 slideInFromLeft,
-    1s ease-out 0s 1 fadeIn,*!
+    1s ease-out 0s 1 fadeIn,
     1s ease-out 0s 1 leaves;
 
 } 
 #animate-next {  
-  /*!* This section calls the slideInFromLeft animation we defined above *!*/
   animation: 
     1.5s ease-out 0s 1 slideInFromLeft,
     3s ease-out 0s 1 fadeIn;
 
 }
 
-/* Typography */
 h1 {
     font-family: 'Anton', sans-serif;
     color: #E4E0EE ;
@@ -64,15 +56,6 @@ h3, h4 {
 
 a {
 	color: #4E2A84;
-}
-
-
-
-/* Footer */
-
-.page-footer {
-	background-color: #000000;
-	color: #342F2E;
 }
 
 #scroll {

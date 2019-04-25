@@ -81,10 +81,18 @@ def four():
 
 @app.route('/plotplaces', methods=['GET', 'POST'])
 def crime_loc_plot():
-    crime_location  = crimes.groupBy("LocationDescription").count().collect()
-    location = [item[0] for item in crime_location]
-    count = [item[1] for item in crime_location]
-    return render_template('sampleui.html',values3=count,labels3=location,name_send3='1')
+    X=[]
+    y=[]
+    crime_loc_groups = crimes.groupBy('LocationDescription').count()
+    crime_loc_counts = crime_loc_groups.orderBy('count', ascending=False)
+    counts_pddf_loc = pd.DataFrame(crime_loc_counts.rdd.map(lambda l: l.asDict()).collect())
+    count_list=counts_pddf_loc.values.tolist()
+    for k,v in count_list:
+        X.append(k)
+        y.append(v)
+    X=X[:30]
+    y=y[:30]
+    return render_template('sampleui.html',values3=y,labels3=X,name_send3='1')
 
 @app.route('/plotdates', methods=['GET', 'POST'])
 def crime_date_plot():
