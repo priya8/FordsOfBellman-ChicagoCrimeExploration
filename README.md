@@ -27,7 +27,10 @@ https://www.youtube.com/watch?v=c5MpOlVeek8
 2. Chicago Heatmap Version 2 <br/>
 3. UI Maps Version 1 <br/>
 
-## Jayadharshini Jaiganesh, Shemal Lalaji and Priyanka Umesh Pandit Tailapur's Combined Contribution <br/>
+## Jayadharshini Jaiganesh and Priyanka Umesh Pandit Tailapur's Combined Contribution <br/>
 1. Flask Version 1 <br/>
 3. UI Maps Version 2 <br/>
 4. Integrated Project Version 1 <br/>
+
+## Jayadharshini Jaiganesh, Priyanka Umesh Pandit Tailapur and Shemal Lalaji's Combined Contribution <br/>
+1. Integrated Project Final Version <br/>
