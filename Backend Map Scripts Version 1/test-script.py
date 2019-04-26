@@ -51,14 +51,7 @@ for i in range(0,204):  # there are ≈ 2 million entries in locations so this w
     
     for _, row in month.iterrows():
         A[i,row['Latitude'],row['Longitude']] += 1
-        
-def draw_frame(i):
-    im = ndimage.gaussian_filter(A[i], sigma=.9, order=0) # add smoothing
-    heatmap = ax.pcolor(im,cmap='plasma',vmin=0, vmax=200)
-    y.set_text("Year: %i"%(2012+int(i/12)))
-    m.set_text("Month: %s"%months[i%12])
-    return heatmap,
-    
+           
 anim = animation.FuncAnimation(fig, draw_frame, frames=204, interval=2, blit=True)
 print(anim)
 
