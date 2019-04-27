@@ -7,13 +7,15 @@ Jayadharshini Jaiganesh </br>
 Shemal Lalaji </br>
 
 # Fords Of Bellman-Chicago Crime Exploration</br>
-This repository contains the codes that we wrote during the course of this semester,for our project.<br/>
+This repository contains the codes that we wrote during the course of this semester for our project.<br/>
 
 ## Video Link - UI Demo
 https://www.youtube.com/watch?v=c5MpOlVeek8
 
 ## Production Link of the project
 https://www.youtube.com/watch?v=c5MpOlVeek8
+
+# Running the project
 
 ## Jayadharshini Jaiganesh's Contribution - GCP, Apache Spark, Docker, Flask, UI <br/>
 1. UI Version 2 <br/>
