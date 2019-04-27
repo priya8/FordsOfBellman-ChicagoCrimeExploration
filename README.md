@@ -1,7 +1,7 @@
 ATLS 5214-001 </br>
 Big Data Architecture - Chicago Crime Exploration</br>
 <br/>
-Team Members </br>
+# Team Members: </br>
 Priyanka Umesh Pandit Tailapur </br>
 Jayadharshini Jaiganesh </br>
 Shemal Lalaji </br>
