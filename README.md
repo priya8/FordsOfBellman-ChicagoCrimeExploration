@@ -1,4 +1,3 @@
-ATLS 5214-001 </br>
 Big Data Architecture - Chicago Crime Analysis</br>
 <br/>
 Team Members </br>
