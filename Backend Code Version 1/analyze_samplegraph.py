@@ -42,11 +42,6 @@ crimes_schema = StructType([StructField("_c0", StringType(), True),
                             StructField("Location", StringType(), True )
                             ])
 
-#crimes = spark.read.csv("gs://chic_crime/version1/ccd_sample.csv",header = True,schema = crimes_schema)
-crimes = spark.read.csv("Chicago_Crimes_2012_to_2017.csv",header = True,schema = crimes_schema)
-print(" The crimes dataframe has {} records".format(crimes.count()))
-print(crimes.select("PrimaryType").distinct().show(n = 5))
-
 #crime_type_counts.show(truncate=False)
 counts_pddf = pd.DataFrame(crime_type_counts.rdd.map(lambda l: l.asDict()).collect())
 plt.rcParams["figure.figsize"] = [26, 8]
