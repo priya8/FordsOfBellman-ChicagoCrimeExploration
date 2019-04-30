@@ -2,38 +2,28 @@
 <head>
    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
    <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-   
-   
-   
-   
+   <style>
 
+	#map 
+	{
+  	position:absolute;
+  	top:0;
+  	bottom:0;
+  	right:0;
+  	left:0;
+       }		
 
-<style>
-
-#map {
-  position:absolute;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
-  
-}
-
-</style>
-</head>
-<body>
-
+    </style>	
+    </head>
+   <body>
         <div id="map" style="width: 1700px; height: 1000px"></div>
 
-<script>
-
-
-
+  <script> 
 var map = L.map('map').setView([41.8369, -87.6847], 11);
 
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+maxZoom: 18,
+attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 
@@ -7956,12 +7946,5 @@ var circle_990 = L.circle([41.801188836, -87.703921672], 200, {
                             });
 circle_990.bindPopup("THEFT");
 map.addLayer(circle_990)
-
-
-
-
-
-
 </script>
-
 </body>
