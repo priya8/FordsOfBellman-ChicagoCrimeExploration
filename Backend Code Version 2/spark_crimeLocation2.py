@@ -10,10 +10,7 @@ import datetime
 os.environ["PYSPARK_PYTHON"]="/usr/bin/python3"
 os.environ["PYSPARK_DRIVER_PYTHON"]="/usr/bin/python3"
 
-#storage_client=storage.Client()
-#bucket=storage_client.get_bucket('chic_crime')
-#blobs=list(bucket.list_blobs())
-#print(blobs)
+
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("Chicago_crime_analysis").getOrCreate()
 from pyspark.sql.types import  (StructType,StructField,DateType,BooleanType,DoubleType,IntegerType,StringType,TimestampType)
