@@ -10,17 +10,17 @@ Shemal Lalaji </br>
 In this project, we used various big data technolgies to explore the distribution of various crimes in the city of Chicago.
 This repository contains the codes that we wrote during the course of this semester for our project.<br/>
 
-## FRONTEND CONTRIBUTIONS
+## Frontend Contributions
 1. Priyanka Umesh Pandit Tailapur - UI Design, Flask, Plots <br/>
 2. Jayadharshini Jaiganesh - Flask, Plots <br/>
 3. Shemal Lalaji - Heatmaps, Maps <br/>
 
-## BACKEND CONTRIBUTIONS
+## Backend Contributions
 1. Jayadharshini Jaiganesh - Apache Spark, GCP <br/>
 1. Priyanka Umesh Pandit Tailapur - GCP <br/>
 3. Shemal Lalaji - GCP, Firebase <br/>
 
-## INTEGRATION CONTRIBUTIONS
+## Integration Contributions
 1. Priyanka Umesh Pandit Tailapur - Docker <br/>
 2. Jayadharshini Jaiganesh - Docker <br/>
 
